@@ -549,6 +549,23 @@
       color: #5b6e8e;
     }
 
+    /* Search */
+    .search-wrapper input {
+      padding: 9px 18px;
+      border: 1px solid #e2e8f0;
+      border-radius: 40px;
+      outline: none;
+      font-size: 14px;
+      transition: 0.2s;
+      min-width: 240px;
+      background: white;
+    }
+
+    .search-wrapper input:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
+
     /* RESPONSIVE */
     @media (max-width: 820px) {
       .app-header {
@@ -564,6 +581,11 @@
 
       .select-wrapper select {
         width: 100%;
+      }
+
+      .search-wrapper input {
+        width: 100%;
+        min-width: unset;
       }
 
       .sidebar {
@@ -645,7 +667,10 @@
         <button class="tab-btn" id="tab-flashcard" onclick="switchView('flashcard')">🎴 Ôn tập</button>
       </nav>
     </div>
-
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" placeholder="🔍 Tìm chữ Hán, pinyin hoặc nghĩa..."
+        oninput="filterVocabulary()">
+    </div>
     <div class="select-wrapper">
       <select id="lessonSelect" onchange="loadAndRenderData()">
         <option value="all">📚 Tất cả bài</option>
@@ -690,6 +715,7 @@
     // ========================
 
     let currentVocabList = [];
+    let originalVocabList = []; // <-- lưu danh sách gốc để khôi phục khi tìm kiếm
     let activeIndex = -1;
     let currentView = 'vocab';
 
@@ -729,11 +755,9 @@
       while (select.options.length > 1) select.remove(1);
 
       let n = 1;
-      let found = false;
       while (true) {
         const data = await fetchLessonData(n);
         if (!data) break;
-        found = true;
         const opt = document.createElement('option');
         opt.value = n;
         opt.textContent = `Bài ${n}`;
@@ -747,6 +771,7 @@
     // ----- TẢI DỮ LIỆU -----
     async function loadAndRenderData() {
       const selected = document.getElementById('lessonSelect').value;
+      let newList = [];
       if (selected === 'all') {
         const promises = [];
         const options = Array.from(document.getElementById('lessonSelect').options).slice(1);
@@ -755,17 +780,26 @@
           if (!isNaN(num)) promises.push(fetchLessonData(num));
         }
         const results = await Promise.all(promises);
-        currentVocabList = results.filter(d => d !== null).flat();
+        newList = results.filter(d => d !== null).flat();
       } else {
         const data = await fetchLessonData(parseInt(selected));
-        currentVocabList = data || [];
+        newList = data || [];
       }
+
+      currentVocabList = newList;
+      originalVocabList = [...newList]; // <-- lưu bản gốc
+
+      // Xóa nội dung ô tìm kiếm để tránh nhầm lẫn
+      document.getElementById('searchInput').value = '';
 
       renderSidebar();
       initFlashcards();
 
       if (window.innerWidth > 820 && currentVocabList.length > 0) {
         selectWord(0);
+      } else {
+        document.getElementById('detailCard').innerHTML =
+          '<div style="color:#7a8aa8;font-weight:500;">Chọn một từ để xem chi tiết</div>';
       }
     }
 
@@ -789,18 +823,19 @@
     function renderSidebar() {
       const sidebar = document.getElementById('sidebarList');
       sidebar.innerHTML = currentVocabList.map((item, i) => `
-      <div class="vocab-item ${i === activeIndex ? 'active' : ''}" onclick="selectWord(${i})">
-        <div class="info">
-          <span class="hanzi">${item.hanzi}</span>
-          <span class="pinyin">${item.pinyin}</span>
+        <div class="vocab-item ${i === activeIndex ? 'active' : ''}" onclick="selectWord(${i})">
+          <div class="info">
+            <span class="hanzi">${item.hanzi}</span>
+            <span class="pinyin">${item.pinyin}</span>
+          </div>
+          <button class="audio-btn" onclick="speakZh('${item.hanzi}', event)">🔊</button>
         </div>
-        <button class="audio-btn" onclick="speakZh('${item.hanzi}', event)">🔊</button>
-      </div>
-    `).join('');
+      `).join('');
     }
 
     // ----- CHỌN TỪ -----
     function selectWord(index) {
+      if (index < 0 || index >= currentVocabList.length) return;
       activeIndex = index;
       renderSidebar();
       document.getElementById('view-vocab').classList.add('show-detail');
@@ -809,34 +844,61 @@
       const card = document.getElementById('detailCard');
 
       card.innerHTML = `
-      <div class="stroke-container" id="strokeContainer"></div>
-      <div class="word-header">
-        <span class="pinyin-large">${item.pinyin}</span>
-        <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}')">🔊</button>
-      </div>
-      <div class="type-badge">${item.type}</div>
-      <div class="meaning-large">${item.meaning}</div>
-      <div class="meta-tag">Bài ${item.lesson}</div>
+        <div class="stroke-container" id="strokeContainer"></div>
+        <div class="word-header">
+          <span class="pinyin-large">${item.pinyin}</span>
+          <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}')">🔊</button>
+        </div>
+        <div class="type-badge">${item.type}</div>
+        <div class="meaning-large">${item.meaning}</div>
+        <div class="meta-tag">Bài ${item.lesson}</div>
 
-      <div class="examples-box">
-        <div class="examples-title">📌 Ví dụ</div>
-        ${(item.examples || []).map(ex => `
-          <div class="example-item">
-            <button class="audio-btn" onclick="speakZh('${ex.zh}', event)">🔊</button>
-            <div class="ex-content">
-              <div class="ex-zh">${ex.zh}</div>
-              <div class="ex-py">${ex.pinyin}</div>
-              <div class="ex-vi">${ex.vi}</div>
+        <div class="examples-box">
+          <div class="examples-title">📌 Ví dụ</div>
+          ${(item.examples || []).map(ex => `
+            <div class="example-item">
+              <button class="audio-btn" onclick="speakZh('${ex.zh}', event)">🔊</button>
+              <div class="ex-content">
+                <div class="ex-zh">${ex.zh}</div>
+                <div class="ex-py">${ex.pinyin}</div>
+                <div class="ex-vi">${ex.vi}</div>
+              </div>
             </div>
-          </div>
-        `).join('') || '<div style="color:#9aabbf;">Chưa có ví dụ</div>'}
-      </div>
-    `;
+          `).join('') || '<div style="color:#9aabbf;">Chưa có ví dụ</div>'}
+        </div>
+      `;
 
       renderHanziWriter('strokeContainer', item.hanzi, window.innerWidth <= 820 ? 120 : 160);
     }
 
     function hideDetailOnMobile() {
+      document.getElementById('view-vocab').classList.remove('show-detail');
+    }
+
+    // ----- TÌM KIẾM -----
+    function filterVocabulary() {
+      const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+
+      if (!keyword) {
+        // Khôi phục danh sách gốc
+        currentVocabList = [...originalVocabList];
+      } else {
+        currentVocabList = originalVocabList.filter(item =>
+          item.hanzi.toLowerCase().includes(keyword) ||
+          item.pinyin.toLowerCase().includes(keyword) ||
+          item.meaning.toLowerCase().includes(keyword) ||
+          (item.type || '').toLowerCase().includes(keyword)
+        );
+      }
+
+      activeIndex = -1;
+      renderSidebar();
+      initFlashcards();
+
+      // Reset chi tiết
+      document.getElementById('detailCard').innerHTML =
+        '<div style="color:#7a8aa8;font-weight:500;">Chọn một từ để xem chi tiết</div>';
+      // Nếu đang ở mobile, đóng chi tiết
       document.getElementById('view-vocab').classList.remove('show-detail');
     }
 
@@ -893,20 +955,20 @@
       if (!isFlipped) {
         // Mặt trước: hiển thị chữ Hán + nút nghe
         container.innerHTML = `
-        <div class="fc-stroke-container" id="fcStrokeContainer"></div>
-        <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}', event)" style="margin-top:8px;">🔊</button>
-        <div class="fc-pinyin">${item.pinyin}</div>
-      `;
+          <div class="fc-stroke-container" id="fcStrokeContainer"></div>
+          <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}', event)" style="margin-top:8px;">🔊</button>
+          <div class="fc-pinyin">${item.pinyin}</div>
+        `;
         renderHanziWriter('fcStrokeContainer', item.hanzi, 120);
       } else {
         // Mặt sau: hiển thị nghĩa và thông tin
         container.innerHTML = `
-        <div class="fc-pinyin" style="font-size:20px;">${item.pinyin}</div>
-        <div class="fc-type">${item.type}</div>
-        <div class="fc-meaning">${item.meaning}</div>
-        <div class="fc-lesson">Bài ${item.lesson}</div>
-        <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}', event)" style="margin-top:12px;">🔊</button>
-      `;
+          <div class="fc-pinyin" style="font-size:20px;">${item.pinyin}</div>
+          <div class="fc-type">${item.type}</div>
+          <div class="fc-meaning">${item.meaning}</div>
+          <div class="fc-lesson">Bài ${item.lesson}</div>
+          <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}', event)" style="margin-top:12px;">🔊</button>
+        `;
       }
     }
 
@@ -924,14 +986,14 @@
           wrapper.style.height = boxSize + 'px';
 
           wrapper.innerHTML = `
-          <svg class="grid" viewBox="0 0 100 100">
-            <line x1="0" y1="50" x2="100" y2="50" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
-            <line x1="50" y1="0" x2="50" y2="100" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
-            <line x1="0" y1="0" x2="100" y2="100" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
-            <line x1="100" y1="0" x2="0" y2="100" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
-          </svg>
-          <div id="${containerId}-target-${idx}" class="target"></div>
-        `;
+            <svg class="grid" viewBox="0 0 100 100">
+              <line x1="0" y1="50" x2="100" y2="50" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
+              <line x1="50" y1="0" x2="50" y2="100" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
+              <line x1="0" y1="0" x2="100" y2="100" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
+              <line x1="100" y1="0" x2="0" y2="100" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
+            </svg>
+            <div id="${containerId}-target-${idx}" class="target"></div>
+          `;
           container.appendChild(wrapper);
 
           const writer = HanziWriter.create(`${containerId}-target-${idx}`, char, {
