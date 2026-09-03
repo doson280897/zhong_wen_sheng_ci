@@ -1,16 +1,198 @@
 [
-  {"lesson":8,"hanzi":"今天","pinyin":"jīntiān","type":"Danh từ","meaning":"Hôm nay","examples":[]},
-  {"lesson":8,"hanzi":"昨天","pinyin":"zuótiān","type":"Danh từ","meaning":"Hôm qua","examples":[]},
-  {"lesson":8,"hanzi":"明天","pinyin":"míngtiān","type":"Danh từ","meaning":"Ngày mai","examples":[]},
-  {"lesson":8,"hanzi":"号","pinyin":"hào","type":"Danh từ","meaning":"Ngày (nói)","examples":[]},
-  {"lesson":8,"hanzi":"日","pinyin":"rì","type":"Danh từ","meaning":"Ngày (viết)","examples":[]},
-  {"lesson":8,"hanzi":"月","pinyin":"yuè","type":"Danh từ","meaning":"Tháng","examples":[]},
-  {"lesson":8,"hanzi":"星期","pinyin":"xīngqī","type":"Danh từ","meaning":"Thứ, tuần","examples":[]},
-  {"lesson":8,"hanzi":"年","pinyin":"nián","type":"Danh từ","meaning":"Năm","examples":[]},
-  {"lesson":8,"hanzi":"今年","pinyin":"jīnnián","type":"Danh từ","meaning":"Năm nay","examples":[]},
-  {"lesson":8,"hanzi":"生日","pinyin":"shēngrì","type":"Danh từ","meaning":"Sinh nhật","examples":[]},
-  {"lesson":8,"hanzi":"祝","pinyin":"zhù","type":"Động từ","meaning":"Chúc","examples":[]},
-  {"lesson":8,"hanzi":"快乐","pinyin":"kuàilè","type":"Tính từ","meaning":"Vui vẻ","examples":[]},
-  {"lesson":8,"hanzi":"对","pinyin":"duì","type":"Tính từ","meaning":"Đúng","examples":[]},
-  {"lesson":8,"hanzi":"怎么样","pinyin":"zěnmeyàng","type":"Đại từ","meaning":"Như thế nào","examples":[]}
+  {
+    "lesson": 8,
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "type": "Danh từ",
+    "meaning": "Hôm nay",
+    "examples": [
+      {
+        "zh": "今天是九月三号。",
+        "pinyin": "jīntiān shì jiǔ yuè sān hào.",
+        "vi": "Hôm nay là ngày 3 tháng 9."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "昨天",
+    "pinyin": "zuótiān",
+    "type": "Danh từ",
+    "meaning": "Hôm qua",
+    "examples": [
+      {
+        "zh": "昨天是星期二。",
+        "pinyin": "zuótiān shì xīngqī'èr.",
+        "vi": "Hôm qua là thứ ba."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "明天",
+    "pinyin": "míngtiān",
+    "type": "Danh từ",
+    "meaning": "Ngày mai",
+    "examples": [
+      {
+        "zh": "明天你有工作吗？",
+        "pinyin": "míngtiān nǐ yǒu gōngzuò ma?",
+        "vi": "Ngày mai bạn có việc làm không?"
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "号",
+    "pinyin": "hào",
+    "type": "Danh từ",
+    "meaning": "Ngày (nói)",
+    "examples": [
+      {
+        "zh": "今天是十号。",
+        "pinyin": "jīntiān shì shí hào.",
+        "vi": "Hôm nay là ngày mồng mười."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "日",
+    "pinyin": "rì",
+    "type": "Danh từ",
+    "meaning": "Ngày (viết)",
+    "examples": [
+      {
+        "zh": "明天是十月一日。",
+        "pinyin": "míngtiān shì shí yuè yī rì.",
+        "vi": "Ngày mai là ngày mồng 1 tháng 10."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "type": "Danh từ",
+    "meaning": "Tháng",
+    "examples": [
+      {
+        "zh": "这个月是八月。",
+        "pinyin": "zhè gè yuè shì bā yuè.",
+        "vi": "Tháng này là tháng tám."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "星期",
+    "pinyin": "xīngqī",
+    "type": "Danh từ",
+    "meaning": "Thứ, tuần",
+    "examples": [
+      {
+        "zh": "今天是星期五。",
+        "pinyin": "jīntiān shì xīngqīwǔ.",
+        "vi": "Hôm nay là thứ sáu."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "年",
+    "pinyin": "nián",
+    "type": "Danh từ",
+    "meaning": "Năm",
+    "examples": [
+      {
+        "zh": "今年是二零二六年。",
+        "pinyin": "jīnnián shì èr líng èr liù nián.",
+        "vi": "Năm nay là năm 2026."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "今年",
+    "pinyin": "jīnnián",
+    "type": "Danh từ",
+    "meaning": "Năm nay",
+    "examples": [
+      {
+        "zh": "今年是二零二六年。",
+        "pinyin": "jīnnián shì èr líng èr liù nián.",
+        "vi": "Năm nay là năm 2026."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "生日",
+    "pinyin": "shēngrì",
+    "type": "Danh từ",
+    "meaning": "Sinh nhật",
+    "examples": [
+      {
+        "zh": "今天是我生日。",
+        "pinyin": "jīntiān shì wǒ shēngrì.",
+        "vi": "Hôm nay là sinh nhật tôi."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "祝",
+    "pinyin": "zhù",
+    "type": "Động từ",
+    "meaning": "Chúc",
+    "examples": [
+      {
+        "zh": "祝你生日快乐！",
+        "pinyin": "zhù nǐ shēngrì kuàilè!",
+        "vi": "Chúc bạn sinh nhật vui vẻ!"
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "快乐",
+    "pinyin": "kuàilè",
+    "type": "Tính từ",
+    "meaning": "Vui vẻ",
+    "examples": [
+      {
+        "zh": "祝你们快乐！",
+        "pinyin": "zhù nǐmen kuàilè!",
+        "vi": "Chúc các bạn vui vẻ!"
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "对",
+    "pinyin": "duì",
+    "type": "Tính từ",
+    "meaning": "Đúng",
+    "examples": [
+      {
+        "zh": "对，他是老师。",
+        "pinyin": "duì, tā shì lǎoshī.",
+        "vi": "Đúng vậy, ông ấy là giáo viên."
+      }
+    ]
+  },
+  {
+    "lesson": 8,
+    "hanzi": "怎么样",
+    "pinyin": "zěnmeyàng",
+    "type": "Đại từ",
+    "meaning": "Như thế nào",
+    "examples": [
+      {
+        "zh": "你汉语怎么样？",
+        "pinyin": "nǐ Hànyǔ zěnmeyàng?",
+        "vi": "Tiếng Trung của bạn thế nào?"
+      }
+    ]
+  }
 ]

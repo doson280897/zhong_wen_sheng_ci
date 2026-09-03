@@ -1,19 +1,240 @@
 [
-  {"lesson":7,"hanzi":"在","pinyin":"zài","type":"Động từ","meaning":"Ở, tại","examples":[]},
-  {"lesson":7,"hanzi":"哪儿","pinyin":"nǎr","type":"Đại từ","meaning":"Ở đâu","examples":[]},
-  {"lesson":7,"hanzi":"银行","pinyin":"yínháng","type":"Danh từ","meaning":"Ngân hàng","examples":[]},
-  {"lesson":7,"hanzi":"中国银行","pinyin":"Zhōngguó Yínháng","type":"Tên riêng","meaning":"Ngân hàng Trung Quốc","examples":[]},
-  {"lesson":7,"hanzi":"知道","pinyin":"zhīdào","type":"Động từ","meaning":"Biết","examples":[]},
-  {"lesson":7,"hanzi":"东边","pinyin":"dōngbian","type":"Danh từ","meaning":"Phía đông","examples":[]},
-  {"lesson":7,"hanzi":"西边","pinyin":"xībian","type":"Danh từ","meaning":"Phía tây","examples":[]},
-  {"lesson":7,"hanzi":"南边","pinyin":"nánbian","type":"Danh từ","meaning":"Phía nam","examples":[]},
-  {"lesson":7,"hanzi":"北边","pinyin":"běibian","type":"Danh từ","meaning":"Phía bắc","examples":[]},
-  {"lesson":7,"hanzi":"前边","pinyin":"qiánbian","type":"Danh từ","meaning":"Phía trước","examples":[]},
-  {"lesson":7,"hanzi":"后边","pinyin":"hòubian","type":"Danh từ","meaning":"Phía sau","examples":[]},
-  {"lesson":7,"hanzi":"旁边","pinyin":"pángbiān","type":"Danh từ","meaning":"Bên cạnh","examples":[]},
-  {"lesson":7,"hanzi":"对面","pinyin":"duìmiàn","type":"Danh từ","meaning":"Đối diện","examples":[]},
-  {"lesson":7,"hanzi":"邮局","pinyin":"yóujú","type":"Danh từ","meaning":"Bưu điện","examples":[]},
-  {"lesson":7,"hanzi":"学校","pinyin":"xuéxiào","type":"Danh từ","meaning":"Trường học","examples":[]},
-  {"lesson":7,"hanzi":"超市","pinyin":"chāoshì","type":"Danh từ","meaning":"Siêu thị","examples":[]},
-  {"lesson":7,"hanzi":"吧","pinyin":"ba","type":"Trợ từ","meaning":"Trợ từ (nhé, đi, chắc là)","examples":[]}
+  {
+    "lesson": 7,
+    "hanzi": "在",
+    "pinyin": "zài",
+    "type": "Động từ",
+    "meaning": "Ở, tại",
+    "examples": [
+      {
+        "zh": "老师在学校。",
+        "pinyin": "lǎoshī zài xuéxiào.",
+        "vi": "Giáo viên ở trường học."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "type": "Đại từ",
+    "meaning": "Ở đâu",
+    "examples": [
+      {
+        "zh": "你在哪儿工作？",
+        "pinyin": "nǐ zài nǎr gōngzuò?",
+        "vi": "Bạn làm việc ở đâu?"
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "银行",
+    "pinyin": "yínháng",
+    "type": "Danh từ",
+    "meaning": "Ngân hàng",
+    "examples": [
+      {
+        "zh": "银行在学校旁边。",
+        "pinyin": "yínháng zài xuéxiào pángbiān.",
+        "vi": "Ngân hàng ở bên cạnh trường học."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "中国银行",
+    "pinyin": "Zhōngguó Yínháng",
+    "type": "Tên riêng",
+    "meaning": "Ngân hàng Trung Quốc",
+    "examples": [
+      {
+        "zh": "我在中国银行工作。",
+        "pinyin": "wǒ zài Zhōngguó Yínháng gōngzuò.",
+        "vi": "Tôi làm việc ở Ngân hàng Trung Quốc."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "知道",
+    "pinyin": "zhīdào",
+    "type": "Động từ",
+    "meaning": "Biết",
+    "examples": [
+      {
+        "zh": "我不知道邮局在哪儿。",
+        "pinyin": "wǒ bù zhīdào yóujú zài nǎr.",
+        "vi": "Tôi không biết bưu điện ở đâu."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "东边",
+    "pinyin": "dōngbian",
+    "type": "Danh từ",
+    "meaning": "Phía đông",
+    "examples": [
+      {
+        "zh": "超市在学校东边。",
+        "pinyin": "chāoshì zài xuéxiào dōngbian.",
+        "vi": "Siêu thị ở phía đông trường học."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "西边",
+    "pinyin": "xībian",
+    "type": "Danh từ",
+    "meaning": "Phía tây",
+    "examples": [
+      {
+        "zh": "邮局在银行西边。",
+        "pinyin": "yóujú zài yínháng xībian.",
+        "vi": "Bưu điện ở phía tây ngân hàng."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "南边",
+    "pinyin": "nánbian",
+    "type": "Danh từ",
+    "meaning": "Phía nam",
+    "examples": [
+      {
+        "zh": "老师家在学校南边。",
+        "pinyin": "lǎoshī jiā zài xuéxiào nánbian.",
+        "vi": "Nhà giáo viên ở phía nam trường học."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "北边",
+    "pinyin": "běibian",
+    "type": "Danh từ",
+    "meaning": "Phía bắc",
+    "examples": [
+      {
+        "zh": "超市在银行北边。",
+        "pinyin": "chāoshì zài yínháng běibian.",
+        "vi": "Siêu thị ở phía bắc ngân hàng."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "前边",
+    "pinyin": "qiánbian",
+    "type": "Danh từ",
+    "meaning": "Phía trước",
+    "examples": [
+      {
+        "zh": "银行在学校前边。",
+        "pinyin": "yínháng zài xuéxiào qiánbian.",
+        "vi": "Ngân hàng ở phía trước trường học."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "后边",
+    "pinyin": "hòubian",
+    "type": "Danh từ",
+    "meaning": "Phía sau",
+    "examples": [
+      {
+        "zh": "邮局在学校后边。",
+        "pinyin": "yóujú zài xuéxiào hòubian.",
+        "vi": "Bưu điện ở phía sau trường học."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "旁边",
+    "pinyin": "pángbiān",
+    "type": "Danh từ",
+    "meaning": "Bên cạnh",
+    "examples": [
+      {
+        "zh": "老师家在银行旁边。",
+        "pinyin": "lǎoshī jiā zài yínháng pángbiān.",
+        "vi": "Nhà giáo viên ở bên cạnh ngân hàng."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "对面",
+    "pinyin": "duìmiàn",
+    "type": "Danh từ",
+    "meaning": "Đối diện",
+    "examples": [
+      {
+        "zh": "学校在超市对面。",
+        "pinyin": "xuéxiào zài chāoshì duìmiàn.",
+        "vi": "Trường học ở đối diện siêu thị."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "邮局",
+    "pinyin": "yóujú",
+    "type": "Danh từ",
+    "meaning": "Bưu điện",
+    "examples": [
+      {
+        "zh": "邮局在超市旁边。",
+        "pinyin": "yóujú zài chāoshì pángbiān.",
+        "vi": "Bưu điện ở bên cạnh siêu thị."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "学校",
+    "pinyin": "xuéxiào",
+    "type": "Danh từ",
+    "meaning": "Trường học",
+    "examples": [
+      {
+        "zh": "我们在学校学习。",
+        "pinyin": "wǒmen zài xuéxiào xuéxí.",
+        "vi": "Chúng tôi học tập ở trường."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "超市",
+    "pinyin": "chāoshì",
+    "type": "Danh từ",
+    "meaning": "Siêu thị",
+    "examples": [
+      {
+        "zh": "超市在银行对面。",
+        "pinyin": "chāoshì zài yínháng duìmiàn.",
+        "vi": "Siêu thị ở đối diện ngân hàng."
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "hanzi": "吧",
+    "pinyin": "ba",
+    "type": "Trợ từ",
+    "meaning": "Trợ từ (nhé, đi, chắc là)",
+    "examples": [
+      {
+        "zh": "我们一起上课吧。",
+        "pinyin": "wǒmen yìqǐ shàng kè ba.",
+        "vi": "Chúng mình cùng lên lớp nhé."
+      }
+    ]
+  }
 ]

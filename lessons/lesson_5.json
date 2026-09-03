@@ -1,30 +1,394 @@
 [
-  {"lesson":5,"hanzi":"家","pinyin":"jiā","type":"Danh từ","meaning":"Nhà, gia đình","examples":[]},
-  {"lesson":5,"hanzi":"有","pinyin":"yǒu","type":"Động từ","meaning":"Có","examples":[]},
-  {"lesson":5,"hanzi":"口","pinyin":"kǒu","type":"Lượng từ","meaning":"Lượng từ (chỉ số người trong gia đình)","examples":[]},
-  {"lesson":5,"hanzi":"爸爸","pinyin":"bàba","type":"Danh từ","meaning":"Bố","examples":[]},
-  {"lesson":5,"hanzi":"妈妈","pinyin":"māma","type":"Danh từ","meaning":"Mẹ","examples":[]},
-  {"lesson":5,"hanzi":"哥哥","pinyin":"gēge","type":"Danh từ","meaning":"Anh trai","examples":[]},
-  {"lesson":5,"hanzi":"和","pinyin":"hé","type":"Liên từ","meaning":"Và","examples":[]},
-  {"lesson":5,"hanzi":"职员","pinyin":"zhíyuán","type":"Danh từ","meaning":"Nhân viên văn phòng","examples":[]},
-  {"lesson":5,"hanzi":"都","pinyin":"dōu","type":"Phó từ","meaning":"Đều","examples":[]},
-  {"lesson":5,"hanzi":"大学生","pinyin":"dàxuéshēng","type":"Danh từ","meaning":"Sinh viên đại học","examples":[]},
-  {"lesson":5,"hanzi":"学生","pinyin":"xuésheng","type":"Danh từ","meaning":"Học sinh","examples":[]},
-  {"lesson":5,"hanzi":"几","pinyin":"jǐ","type":"Số từ","meaning":"Mấy","examples":[]},
-  {"lesson":5,"hanzi":"多少","pinyin":"duōshao","type":"Đại từ","meaning":"Bao nhiêu","examples":[]},
-  {"lesson":5,"hanzi":"做","pinyin":"zuò","type":"Động từ","meaning":"Làm","examples":[]},
-  {"lesson":5,"hanzi":"工作","pinyin":"gōngzuò","type":"Danh từ","meaning":"Công việc / Làm việc","examples":[]},
-  {"lesson":5,"hanzi":"律师","pinyin":"lǜshī","type":"Danh từ","meaning":"Luật sư","examples":[]},
-  {"lesson":5,"hanzi":"医生","pinyin":"yīshēng","type":"Danh từ","meaning":"Bác sĩ","examples":[]},
-  {"lesson":5,"hanzi":"班","pinyin":"bān","type":"Danh từ","meaning":"Lớp","examples":[]},
-  {"lesson":5,"hanzi":"个","pinyin":"gè","type":"Lượng từ","meaning":"Lượng từ chung (cái, con, người)","examples":[]},
-  {"lesson":5,"hanzi":"我们","pinyin":"wǒmen","type":"Đại từ","meaning":"Chúng tôi, chúng ta","examples":[]},
-  {"lesson":5,"hanzi":"两","pinyin":"liǎng","type":"Số từ","meaning":"Hai (dùng trước lượng từ)","examples":[]},
-  {"lesson":5,"hanzi":"姐姐","pinyin":"jiějie","type":"Danh từ","meaning":"Chị gái","examples":[]},
-  {"lesson":5,"hanzi":"妹妹","pinyin":"mèimei","type":"Danh từ","meaning":"Em gái","examples":[]},
-  {"lesson":5,"hanzi":"弟弟","pinyin":"dìdi","type":"Danh từ","meaning":"Em trai","examples":[]},
-  {"lesson":5,"hanzi":"工人","pinyin":"gōngrén","type":"Danh từ","meaning":"Công nhân","examples":[]},
-  {"lesson":5,"hanzi":"农民","pinyin":"nóngmín","type":"Danh từ","meaning":"Nông dân","examples":[]},
-  {"lesson":5,"hanzi":"护士","pinyin":"hùshi","type":"Danh từ","meaning":"Y tá","examples":[]},
-  {"lesson":5,"hanzi":"警察","pinyin":"jǐngchá","type":"Danh từ","meaning":"Cảnh sát","examples":[]}
+  {
+    "lesson": 5,
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "type": "Danh từ",
+    "meaning": "Nhà, gia đình",
+    "examples": [
+      {
+        "zh": "我家有四口人。",
+        "pinyin": "wǒ jiā yǒu sì kǒu rén.",
+        "vi": "Nhà tôi có bốn người."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "type": "Động từ",
+    "meaning": "Có",
+    "examples": [
+      {
+        "zh": "你家有几口人？",
+        "pinyin": "nǐ jiā yǒu jǐ kǒu rén?",
+        "vi": "Nhà bạn có mấy người?"
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "type": "Lượng từ",
+    "meaning": "Lượng từ (chỉ số người trong gia đình)",
+    "examples": [
+      {
+        "zh": "我家有五口人。",
+        "pinyin": "wǒ jiā yǒu wǔ kǒu rén.",
+        "vi": "Nhà tôi có năm người."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "type": "Danh từ",
+    "meaning": "Bố",
+    "examples": [
+      {
+        "zh": "我爸爸是医生。",
+        "pinyin": "wǒ bàba shì yīshēng.",
+        "vi": "Bố tôi là bác sĩ."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "type": "Danh từ",
+    "meaning": "Mẹ",
+    "examples": [
+      {
+        "zh": "我妈妈是老师。",
+        "pinyin": "wǒ māma shì lǎoshī.",
+        "vi": "Mẹ tôi là giáo viên."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "哥哥",
+    "pinyin": "gēge",
+    "type": "Danh từ",
+    "meaning": "Anh trai",
+    "examples": [
+      {
+        "zh": "我哥哥是大学生。",
+        "pinyin": "wǒ gēge shì dàxuéshēng.",
+        "vi": "Anh trai tôi là sinh viên đại học."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "和",
+    "pinyin": "hé",
+    "type": "Liên từ",
+    "meaning": "Và",
+    "examples": [
+      {
+        "zh": "爸爸和妈妈都是医生。",
+        "pinyin": "bàba hé māma dōu shì yīshēng.",
+        "vi": "Bố và mẹ đều là bác sĩ."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "职员",
+    "pinyin": "zhíyuán",
+    "type": "Danh từ",
+    "meaning": "Nhân viên văn phòng",
+    "examples": [
+      {
+        "zh": "他是职员。",
+        "pinyin": "tā shì zhíyuán.",
+        "vi": "Anh ấy là nhân viên văn phòng."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "type": "Phó từ",
+    "meaning": "Đều",
+    "examples": [
+      {
+        "zh": "我们都学习汉语。",
+        "pinyin": "wǒmen dōu xuéxí Hànyǔ.",
+        "vi": "Chúng tôi đều học tiếng Trung."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "大学生",
+    "pinyin": "dàxuéshēng",
+    "type": "Danh từ",
+    "meaning": "Sinh viên đại học",
+    "examples": [
+      {
+        "zh": "哥哥和姐姐都是大学生。",
+        "pinyin": "gēge hé jiějie dōu shì dàxuéshēng.",
+        "vi": "Anh trai và chị gái đều là sinh viên đại học."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "学生",
+    "pinyin": "xuésheng",
+    "type": "Danh từ",
+    "meaning": "Học sinh",
+    "examples": [
+      {
+        "zh": "我们都是学生。",
+        "pinyin": "wǒmen dōu shì xuésheng.",
+        "vi": "Chúng tôi đều là học sinh."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "type": "Số từ",
+    "meaning": "Mấy",
+    "examples": [
+      {
+        "zh": "你有几个弟弟？",
+        "pinyin": "nǐ yǒu jǐ gè dìdi?",
+        "vi": "Bạn có mấy người em trai?"
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "type": "Đại từ",
+    "meaning": "Bao nhiêu",
+    "examples": [
+      {
+        "zh": "你们班有多少个学生？",
+        "pinyin": "nǐmen bān yǒu duōshao gè xuésheng?",
+        "vi": "Lớp của các bạn có bao nhiêu học sinh?"
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "type": "Động từ",
+    "meaning": "Làm",
+    "examples": [
+      {
+        "zh": "你爸爸做什么工作？",
+        "pinyin": "nǐ bàba zuò shénme gōngzuò?",
+        "vi": "Bố bạn làm công việc gì?"
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "工作",
+    "pinyin": "gōngzuò",
+    "type": "Danh từ",
+    "meaning": "Công việc / Làm việc",
+    "examples": [
+      {
+        "zh": "你做什么工作？",
+        "pinyin": "nǐ zuò shénme gōngzuò?",
+        "vi": "Bạn làm công việc gì?"
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "律师",
+    "pinyin": "lǜshī",
+    "type": "Danh từ",
+    "meaning": "Luật sư",
+    "examples": [
+      {
+        "zh": "他爸爸是律师。",
+        "pinyin": "tā bàba shì lǜshī.",
+        "vi": "Bố anh ấy là luật sư."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "医生",
+    "pinyin": "yīshēng",
+    "type": "Danh từ",
+    "meaning": "Bác sĩ",
+    "examples": [
+      {
+        "zh": "我妈妈是医生。",
+        "pinyin": "wǒ māma shì yīshēng.",
+        "vi": "Mẹ tôi là bác sĩ."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "班",
+    "pinyin": "bān",
+    "type": "Danh từ",
+    "meaning": "Lớp",
+    "examples": [
+      {
+        "zh": "我们班有十个学生。",
+        "pinyin": "wǒmen bān yǒu shí gè xuésheng.",
+        "vi": "Lớp chúng tôi có mười học sinh."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "个",
+    "pinyin": "gè",
+    "type": "Lượng từ",
+    "meaning": "Lượng từ chung (cái, con, người)",
+    "examples": [
+      {
+        "zh": "我有两个姐姐。",
+        "pinyin": "wǒ yǒu liǎng gè jiějie.",
+        "vi": "Tôi có hai người chị gái."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "type": "Đại từ",
+    "meaning": "Chúng tôi, chúng ta",
+    "examples": [
+      {
+        "zh": "我们一起学习。",
+        "pinyin": "wǒmen yìqǐ xuéxí.",
+        "vi": "Chúng tôi cùng nhau học tập."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "type": "Số từ",
+    "meaning": "Hai (dùng trước lượng từ)",
+    "examples": [
+      {
+        "zh": "我有两个妹妹。",
+        "pinyin": "wǒ yǒu liǎng gè mèimei.",
+        "vi": "Tôi có hai em gái."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "姐姐",
+    "pinyin": "jiějie",
+    "type": "Danh từ",
+    "meaning": "Chị gái",
+    "examples": [
+      {
+        "zh": "我姐姐是护士。",
+        "pinyin": "wǒ jiějie shì hùshi.",
+        "vi": "Chị gái tôi là y tá."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "妹妹",
+    "pinyin": "mèimei",
+    "type": "Danh từ",
+    "meaning": "Em gái",
+    "examples": [
+      {
+        "zh": "他有两个妹妹。",
+        "pinyin": "tā yǒu liǎng gè mèimei.",
+        "vi": "Anh ấy có hai em gái."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "type": "Danh từ",
+    "meaning": "Em trai",
+    "examples": [
+      {
+        "zh": "我弟弟是学生。",
+        "pinyin": "wǒ dìdi shì xuésheng.",
+        "vi": "Em trai tôi là học sinh."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "工人",
+    "pinyin": "gōngrén",
+    "type": "Danh từ",
+    "meaning": "Công nhân",
+    "examples": [
+      {
+        "zh": "他爸爸是工人。",
+        "pinyin": "tā bàba shì gōngrén.",
+        "vi": "Bố anh ấy là công nhân."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "农民",
+    "pinyin": "nóngmín",
+    "type": "Danh từ",
+    "meaning": "Nông dân",
+    "examples": [
+      {
+        "zh": "他爸爸和妈妈都是农民。",
+        "pinyin": "tā bàba hé māma dōu shì nóngmín.",
+        "vi": "Bố mẹ cậu ấy đều là nông dân."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "护士",
+    "pinyin": "hùshi",
+    "type": "Danh từ",
+    "meaning": "Y tá",
+    "examples": [
+      {
+        "zh": "我姐姐是护士。",
+        "pinyin": "wǒ jiějie shì hùshi.",
+        "vi": "Chị gái tôi là y tá."
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "hanzi": "警察",
+    "pinyin": "jǐngchá",
+    "type": "Danh từ",
+    "meaning": "Cảnh sát",
+    "examples": [
+      {
+        "zh": "他哥哥是警察。",
+        "pinyin": "tā gēge shì jǐngchá.",
+        "vi": "Anh trai anh ấy là cảnh sát."
+      }
+    ]
+  }
 ]

@@ -1,23 +1,296 @@
 [
-  {"lesson":4,"hanzi":"留学生","pinyin":"liúxuéshēng","type":"Danh từ","meaning":"Lưu học sinh","examples":[]},
-  {"lesson":4,"hanzi":"她","pinyin":"tā","type":"Đại từ","meaning":"Cô ấy, chị ấy","examples":[]},
-  {"lesson":4,"hanzi":"学习","pinyin":"xuéxí","type":"Động từ","meaning":"Học tập, học","examples":[]},
-  {"lesson":4,"hanzi":"他们","pinyin":"tāmen","type":"Đại từ","meaning":"Họ","examples":[]},
-  {"lesson":4,"hanzi":"们","pinyin":"men","type":"Hậu tố","meaning":"Hậu tố số nhiều","examples":[]},
-  {"lesson":4,"hanzi":"一起","pinyin":"yìqǐ","type":"Phó từ","meaning":"Cùng nhau","examples":[]},
-  {"lesson":4,"hanzi":"上课","pinyin":"shàng kè","type":"Động từ","meaning":"Lên lớp, đi học","examples":[]},
-  {"lesson":4,"hanzi":"说","pinyin":"shuō","type":"Động từ","meaning":"Nói","examples":[]},
-  {"lesson":4,"hanzi":"吗","pinyin":"ma","type":"Trợ từ","meaning":"Trợ từ nghi vấn (không?)","examples":[]},
-  {"lesson":4,"hanzi":"不","pinyin":"bù","type":"Phó từ","meaning":"Không","examples":[]},
-  {"lesson":4,"hanzi":"谁","pinyin":"shéi","type":"Đại từ","meaning":"Ai","examples":[]},
-  {"lesson":4,"hanzi":"同学","pinyin":"tóngxué","type":"Danh từ","meaning":"Bạn học","examples":[]},
-  {"lesson":4,"hanzi":"朱云","pinyin":"Zhū Yún","type":"Tên riêng","meaning":"Chu Vân (Zhu Yun)","examples":[]},
-  {"lesson":4,"hanzi":"汉语","pinyin":"Hànyǔ","type":"Danh từ","meaning":"Tiếng Hán","examples":[]},
-  {"lesson":4,"hanzi":"英语","pinyin":"Yīngyǔ","type":"Danh từ","meaning":"Tiếng Anh","examples":[]},
-  {"lesson":4,"hanzi":"法语","pinyin":"Fǎyǔ","type":"Danh từ","meaning":"Tiếng Pháp","examples":[]},
-  {"lesson":4,"hanzi":"日语","pinyin":"Rìyǔ","type":"Danh từ","meaning":"Tiếng Nhật","examples":[]},
-  {"lesson":4,"hanzi":"韩语","pinyin":"Hányǔ","type":"Danh từ","meaning":"Tiếng Hàn","examples":[]},
-  {"lesson":4,"hanzi":"德语","pinyin":"Déyǔ","type":"Danh từ","meaning":"Tiếng Đức","examples":[]},
-  {"lesson":4,"hanzi":"意大利语","pinyin":"Yìdàlìyǔ","type":"Danh từ","meaning":"Tiếng Ý","examples":[]},
-  {"lesson":4,"hanzi":"西班牙语","pinyin":"Xībānyáyǔ","type":"Danh từ","meaning":"Tiếng Tây Ban Nha","examples":[]}
+  {
+    "lesson": 4,
+    "hanzi": "留学生",
+    "pinyin": "liúxuéshēng",
+    "type": "Danh từ",
+    "meaning": "Lưu học sinh",
+    "examples": [
+      {
+        "zh": "他们是留学生。",
+        "pinyin": "tāmen shì liúxuéshēng.",
+        "vi": "Họ là lưu học sinh."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "她",
+    "pinyin": "tā",
+    "type": "Đại từ",
+    "meaning": "Cô ấy, chị ấy",
+    "examples": [
+      {
+        "zh": "她是朱云。",
+        "pinyin": "tā shì Zhū Yún.",
+        "vi": "Cô ấy là Chu Vân."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "学习",
+    "pinyin": "xuéxí",
+    "type": "Động từ",
+    "meaning": "Học tập, học",
+    "examples": [
+      {
+        "zh": "我学习汉语。",
+        "pinyin": "wǒ xuéxí Hànyǔ.",
+        "vi": "Tôi học tiếng Trung."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "他们",
+    "pinyin": "tāmen",
+    "type": "Đại từ",
+    "meaning": "Họ",
+    "examples": [
+      {
+        "zh": "他们学习英语。",
+        "pinyin": "tāmen xuéxí Yīngyǔ.",
+        "vi": "Họ học tiếng Anh."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "们",
+    "pinyin": "men",
+    "type": "Hậu tố",
+    "meaning": "Hậu tố số nhiều",
+    "examples": [
+      {
+        "zh": "同学们，你们好！",
+        "pinyin": "tóngxuémen, nǐmen hǎo!",
+        "vi": "Chào các bạn học!"
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "一起",
+    "pinyin": "yìqǐ",
+    "type": "Phó từ",
+    "meaning": "Cùng nhau",
+    "examples": [
+      {
+        "zh": "他们一起学习。",
+        "pinyin": "tāmen yìqǐ xuéxí.",
+        "vi": "Họ cùng nhau học tập."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "上课",
+    "pinyin": "shàng kè",
+    "type": "Động từ",
+    "meaning": "Lên lớp, đi học",
+    "examples": [
+      {
+        "zh": "他们一起上课。",
+        "pinyin": "tāmen yìqǐ shàng kè.",
+        "vi": "Họ cùng nhau lên lớp."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "type": "Động từ",
+    "meaning": "Nói",
+    "examples": [
+      {
+        "zh": "他说英语，我说汉语。",
+        "pinyin": "tā shuō Yīngyǔ, wǒ shuō Hànyǔ.",
+        "vi": "Anh ấy nói tiếng Anh, tôi nói tiếng Trung."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "type": "Trợ từ",
+    "meaning": "Trợ từ nghi vấn (không?)",
+    "examples": [
+      {
+        "zh": "你是留学生吗？",
+        "pinyin": "nǐ shì liúxuéshēng ma?",
+        "vi": "Bạn có phải là lưu học sinh không?"
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "不",
+    "pinyin": "bù",
+    "type": "Phó từ",
+    "meaning": "Không",
+    "examples": [
+      {
+        "zh": "我不学习法语。",
+        "pinyin": "wǒ bù xuéxí Fǎyǔ.",
+        "vi": "Tôi không học tiếng Pháp."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "type": "Đại từ",
+    "meaning": "Ai",
+    "examples": [
+      {
+        "zh": "谁是李老师？",
+        "pinyin": "shéi shì Lǐ lǎoshī?",
+        "vi": "Ai là thầy Lý?"
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "type": "Danh từ",
+    "meaning": "Bạn học",
+    "examples": [
+      {
+        "zh": "他是同学。",
+        "pinyin": "tā shì tóngxué.",
+        "vi": "Cậu ấy là bạn học."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "朱云",
+    "pinyin": "Zhū Yún",
+    "type": "Tên riêng",
+    "meaning": "Chu Vân (Zhu Yun)",
+    "examples": [
+      {
+        "zh": "朱云学习汉语。",
+        "pinyin": "Zhū Yún xuéxí Hànyǔ.",
+        "vi": "Chu Vân học tiếng Trung."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "汉语",
+    "pinyin": "Hànyǔ",
+    "type": "Danh từ",
+    "meaning": "Tiếng Hán",
+    "examples": [
+      {
+        "zh": "我学习汉语。",
+        "pinyin": "wǒ xuéxí Hànyǔ.",
+        "vi": "Tôi học tiếng Trung."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "英语",
+    "pinyin": "Yīngyǔ",
+    "type": "Danh từ",
+    "meaning": "Tiếng Anh",
+    "examples": [
+      {
+        "zh": "马丁说英语。",
+        "pinyin": "Mǎdīng shuō Yīngyǔ.",
+        "vi": "Martin nói tiếng Anh."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "法语",
+    "pinyin": "Fǎyǔ",
+    "type": "Danh từ",
+    "meaning": "Tiếng Pháp",
+    "examples": [
+      {
+        "zh": "他学习法语吗？",
+        "pinyin": "tā xuéxí Fǎyǔ ma?",
+        "vi": "Anh ấy có học tiếng Pháp không?"
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "日语",
+    "pinyin": "Rìyǔ",
+    "type": "Danh từ",
+    "meaning": "Tiếng Nhật",
+    "examples": [
+      {
+        "zh": "山田佑说日语。",
+        "pinyin": "Shāntián Yòu shuō Rìyǔ.",
+        "vi": "Sơn Điền Hữu nói tiếng Nhật."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "韩语",
+    "pinyin": "Hányǔ",
+    "type": "Danh từ",
+    "meaning": "Tiếng Hàn",
+    "examples": [
+      {
+        "zh": "崔浩说韩语。",
+        "pinyin": "Cuī Hào shuō Hányǔ.",
+        "vi": "Thôi Hạo nói tiếng Hàn."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "德语",
+    "pinyin": "Déyǔ",
+    "type": "Danh từ",
+    "meaning": "Tiếng Đức",
+    "examples": [
+      {
+        "zh": "林娜学习德语吗？",
+        "pinyin": "Línnà xuéxí Déyǔ ma?",
+        "vi": "Linna có học tiếng Đức không?"
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "意大利语",
+    "pinyin": "Yìdàlìyǔ",
+    "type": "Danh từ",
+    "meaning": "Tiếng Ý",
+    "examples": [
+      {
+        "zh": "他不说意大利语。",
+        "pinyin": "tā bù shuō Yìdàlìyǔ.",
+        "vi": "Anh ấy không nói tiếng Ý."
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "hanzi": "西班牙语",
+    "pinyin": "Xībānyáyǔ",
+    "type": "Danh từ",
+    "meaning": "Tiếng Tây Ban Nha",
+    "examples": [
+      {
+        "zh": "谁学习西班牙语？",
+        "pinyin": "shéi xuéxí Xībānyáyǔ?",
+        "vi": "Ai học tiếng Tây Ban Nha?"
+      }
+    ]
+  }
 ]

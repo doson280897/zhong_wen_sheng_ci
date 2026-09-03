@@ -1,17 +1,212 @@
 [
-  {"lesson":1,"hanzi":"你好","pinyin":"nǐ hǎo","type":"Thán từ","meaning":"Xin chào","examples":[]},
-  {"lesson":1,"hanzi":"你","pinyin":"nǐ","type":"Đại từ","meaning":"Bạn, anh, chị (ngôi thứ 2 số ít)","examples":[]},
-  {"lesson":1,"hanzi":"好","pinyin":"hǎo","type":"Tính từ","meaning":"Tốt, khỏe, hay","examples":[]},
-  {"lesson":1,"hanzi":"您","pinyin":"nín","type":"Đại từ","meaning":"Ngài, ông, bà (xưng hô lịch sự)","examples":[]},
-  {"lesson":1,"hanzi":"零","pinyin":"líng","type":"Số từ","meaning":"Số 0","examples":[]},
-  {"lesson":1,"hanzi":"一","pinyin":"yī","type":"Số từ","meaning":"Số 1","examples":[]},
-  {"lesson":1,"hanzi":"二","pinyin":"èr","type":"Số từ","meaning":"Số 2","examples":[]},
-  {"lesson":1,"hanzi":"五","pinyin":"wǔ","type":"Số từ","meaning":"Số 5","examples":[]},
-  {"lesson":1,"hanzi":"八","pinyin":"bā","type":"Số từ","meaning":"Số 8","examples":[]},
-  {"lesson":1,"hanzi":"马丁","pinyin":"Mǎdīng","type":"Tên riêng","meaning":"Mã Đinh (Martin)","examples":[]},
-  {"lesson":1,"hanzi":"林娜","pinyin":"Línnà","type":"Tên riêng","meaning":"Lâm Na (Linna)","examples":[]},
-  {"lesson":1,"hanzi":"李一民","pinyin":"Lǐ Yīmín","type":"Tên riêng","meaning":"Lý Nhất Dân (tên thầy giáo)","examples":[]},
-  {"lesson":1,"hanzi":"阿明","pinyin":"Āmíng","type":"Tên riêng","meaning":"A Minh (A'ming)","examples":[]},
-  {"lesson":1,"hanzi":"你们","pinyin":"nǐmen","type":"Đại từ","meaning":"Các bạn","examples":[]},
-  {"lesson":1,"hanzi":"老师","pinyin":"lǎoshī","type":"Danh từ","meaning":"Thầy / cô giáo","examples":[]}
+  {
+    "lesson": 1,
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "type": "Thán từ",
+    "meaning": "Xin chào",
+    "examples": [
+      {
+        "zh": "你好，老师！",
+        "pinyin": "nǐ hǎo, lǎoshī!",
+        "vi": "Em chào thầy/cô giáo ạ!"
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "type": "Đại từ",
+    "meaning": "Bạn, anh, chị (ngôi thứ 2 số ít)",
+    "examples": [
+      {
+        "zh": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vi": "Chào bạn!"
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "type": "Tính từ",
+    "meaning": "Tốt, khỏe, hay",
+    "examples": [
+      {
+        "zh": "你好。",
+        "pinyin": "nǐ hǎo.",
+        "vi": "Chào bạn."
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "您",
+    "pinyin": "nín",
+    "type": "Đại từ",
+    "meaning": "Ngài, ông, bà (xưng hô lịch sự)",
+    "examples": [
+      {
+        "zh": "您好，老师！",
+        "pinyin": "nín hǎo, lǎoshī!",
+        "vi": "Em chào thầy/cô giáo ạ!"
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "零",
+    "pinyin": "líng",
+    "type": "Số từ",
+    "meaning": "Số 0",
+    "examples": [
+      {
+        "zh": "零、一、二。",
+        "pinyin": "líng, yī, èr.",
+        "vi": "Không, một, hai."
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "一",
+    "pinyin": "yī",
+    "type": "Số từ",
+    "meaning": "Số 1",
+    "examples": [
+      {
+        "zh": "一、二、五。",
+        "pinyin": "yī, èr, wǔ.",
+        "vi": "Một, hai, năm."
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "二",
+    "pinyin": "èr",
+    "type": "Số từ",
+    "meaning": "Số 2",
+    "examples": [
+      {
+        "zh": "一、二、八。",
+        "pinyin": "yī, èr, bā.",
+        "vi": "Một, hai, tám."
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "type": "Số từ",
+    "meaning": "Số 5",
+    "examples": [
+      {
+        "zh": "一、二、五、八。",
+        "pinyin": "yī, èr, wǔ, bā.",
+        "vi": "Một, hai, năm, tám."
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "八",
+    "pinyin": "bā",
+    "type": "Số từ",
+    "meaning": "Số 8",
+    "examples": [
+      {
+        "zh": "五、八。",
+        "pinyin": "wǔ, bā.",
+        "vi": "Năm, tám."
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "马丁",
+    "pinyin": "Mǎdīng",
+    "type": "Tên riêng",
+    "meaning": "Mã Đinh (Martin)",
+    "examples": [
+      {
+        "zh": "马丁，你好！",
+        "pinyin": "Mǎdīng, nǐ hǎo!",
+        "vi": "Chào Martin!"
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "林娜",
+    "pinyin": "Línnà",
+    "type": "Tên riêng",
+    "meaning": "Lâm Na (Linna)",
+    "examples": [
+      {
+        "zh": "林娜，你好！",
+        "pinyin": "Línnà, nǐ hǎo!",
+        "vi": "Chào Linna!"
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "李一民",
+    "pinyin": "Lǐ Yīmín",
+    "type": "Tên riêng",
+    "meaning": "Lý Nhất Dân (tên thầy giáo)",
+    "examples": [
+      {
+        "zh": "李一民老师，您好！",
+        "pinyin": "Lǐ Yīmín lǎoshī, nín hǎo!",
+        "vi": "Em chào thầy Lý Nhất Dân!"
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "阿明",
+    "pinyin": "Āmíng",
+    "type": "Tên riêng",
+    "meaning": "A Minh (A'ming)",
+    "examples": [
+      {
+        "zh": "阿明，你好！",
+        "pinyin": "Āmíng, nǐ hǎo!",
+        "vi": "Chào A Minh!"
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "你们",
+    "pinyin": "nǐmen",
+    "type": "Đại từ",
+    "meaning": "Các bạn",
+    "examples": [
+      {
+        "zh": "你们好！",
+        "pinyin": "nǐmen hǎo!",
+        "vi": "Chào các bạn!"
+      }
+    ]
+  },
+  {
+    "lesson": 1,
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "type": "Danh từ",
+    "meaning": "Thầy / cô giáo",
+    "examples": [
+      {
+        "zh": "老师，您好！",
+        "pinyin": "lǎoshī, nín hǎo!",
+        "vi": "Em chào thầy/cô giáo ạ!"
+      }
+    ]
+  }
 ]

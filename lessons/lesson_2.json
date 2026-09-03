@@ -1,24 +1,310 @@
 [
-  {"lesson":2,"hanzi":"早上","pinyin":"zǎoshang","type":"Danh từ","meaning":"Buổi sáng","examples":[]},
-  {"lesson":2,"hanzi":"是","pinyin":"shì","type":"Động từ","meaning":"Là","examples":[]},
-  {"lesson":2,"hanzi":"哪","pinyin":"nǎ","type":"Đại từ","meaning":"Nào, đâu","examples":[]},
-  {"lesson":2,"hanzi":"国","pinyin":"guó","type":"Danh từ","meaning":"Nước, quốc gia","examples":[]},
-  {"lesson":2,"hanzi":"人","pinyin":"rén","type":"Danh từ","meaning":"Người","examples":[]},
-  {"lesson":2,"hanzi":"我","pinyin":"wǒ","type":"Đại từ","meaning":"Tôi, tớ","examples":[]},
-  {"lesson":2,"hanzi":"呢","pinyin":"ne","type":"Trợ từ","meaning":"Trợ từ (thì sao / nằm ở đâu...)","examples":[]},
-  {"lesson":2,"hanzi":"他","pinyin":"tā","type":"Đại từ","meaning":"Anh ấy, ông ấy","examples":[]},
-  {"lesson":2,"hanzi":"三","pinyin":"sān","type":"Số từ","meaning":"Số 3","examples":[]},
-  {"lesson":2,"hanzi":"四","pinyin":"sì","type":"Số từ","meaning":"Số 4","examples":[]},
-  {"lesson":2,"hanzi":"十","pinyin":"shí","type":"Số từ","meaning":"Số 10","examples":[]},
-  {"lesson":2,"hanzi":"崔浩","pinyin":"Cuī Hào","type":"Tên riêng","meaning":"Thôi Hạo (Cui Hao)","examples":[]},
-  {"lesson":2,"hanzi":"美国","pinyin":"Měiguó","type":"Tên riêng","meaning":"Mỹ","examples":[]},
-  {"lesson":2,"hanzi":"韩国","pinyin":"Hánguó","type":"Tên riêng","meaning":"Hàn Quốc","examples":[]},
-  {"lesson":2,"hanzi":"日本","pinyin":"Rìběn","type":"Tên riêng","meaning":"Nhật Bản","examples":[]},
-  {"lesson":2,"hanzi":"中国","pinyin":"Zhōngguó","type":"Tên riêng","meaning":"Trung Quốc","examples":[]},
-  {"lesson":2,"hanzi":"德国","pinyin":"Déguó","type":"Tên riêng","meaning":"Đức","examples":[]},
-  {"lesson":2,"hanzi":"英国","pinyin":"Yīngguó","type":"Tên riêng","meaning":"Anh","examples":[]},
-  {"lesson":2,"hanzi":"印度","pinyin":"Yìndù","type":"Tên riêng","meaning":"Ấn Độ","examples":[]},
-  {"lesson":2,"hanzi":"意大利","pinyin":"Yìdàlì","type":"Tên riêng","meaning":"Ý","examples":[]},
-  {"lesson":2,"hanzi":"法国","pinyin":"Fǎguó","type":"Tên riêng","meaning":"Pháp","examples":[]},
-  {"lesson":2,"hanzi":"泰国","pinyin":"Tàiguó","type":"Tên riêng","meaning":"Thái Lan","examples":[]}
+  {
+    "lesson": 2,
+    "hanzi": "早上",
+    "pinyin": "zǎoshang",
+    "type": "Danh từ",
+    "meaning": "Buổi sáng",
+    "examples": [
+      {
+        "zh": "老师，早上好！",
+        "pinyin": "lǎoshī, zǎoshang hǎo!",
+        "vi": "Em chào thầy/cô, chúc thầy/cô buổi sáng tốt lành!"
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "是",
+    "pinyin": "shì",
+    "type": "Động từ",
+    "meaning": "Là",
+    "examples": [
+      {
+        "zh": "我是林娜。",
+        "pinyin": "wǒ shì Línnà.",
+        "vi": "Tôi là Linna."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "type": "Đại từ",
+    "meaning": "Nào, đâu",
+    "examples": [
+      {
+        "zh": "你是哪国人？",
+        "pinyin": "nǐ shì nǎ guó rén?",
+        "vi": "Bạn là người nước nào?"
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "国",
+    "pinyin": "guó",
+    "type": "Danh từ",
+    "meaning": "Nước, quốc gia",
+    "examples": [
+      {
+        "zh": "你是哪国人？",
+        "pinyin": "nǐ shì nǎ guó rén?",
+        "vi": "Bạn là người nước nào?"
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "人",
+    "pinyin": "rén",
+    "type": "Danh từ",
+    "meaning": "Người",
+    "examples": [
+      {
+        "zh": "他是英国人。",
+        "pinyin": "tā shì Yīngguó rén.",
+        "vi": "Anh ấy là người Anh."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "type": "Đại từ",
+    "meaning": "Tôi, tớ",
+    "examples": [
+      {
+        "zh": "我是中国人。",
+        "pinyin": "wǒ shì Zhōngguó rén.",
+        "vi": "Tôi là người Trung Quốc."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "type": "Trợ từ",
+    "meaning": "Trợ từ (thì sao / nằm ở đâu...)",
+    "examples": [
+      {
+        "zh": "我是美国人，你呢？",
+        "pinyin": "wǒ shì Měiguó rén, nǐ ne?",
+        "vi": "Tôi là người Mỹ, còn bạn?"
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "他",
+    "pinyin": "tā",
+    "type": "Đại từ",
+    "meaning": "Anh ấy, ông ấy",
+    "examples": [
+      {
+        "zh": "他是崔浩。",
+        "pinyin": "tā shì Cuī Hào.",
+        "vi": "Cậu ấy là Thôi Hạo."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "三",
+    "pinyin": "sān",
+    "type": "Số từ",
+    "meaning": "Số 3",
+    "examples": [
+      {
+        "zh": "一、二、三。",
+        "pinyin": "yī, èr, sān.",
+        "vi": "Một, hai, ba."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "四",
+    "pinyin": "sì",
+    "type": "Số từ",
+    "meaning": "Số 4",
+    "examples": [
+      {
+        "zh": "三、四、五。",
+        "pinyin": "sān, sì, wǔ.",
+        "vi": "Ba, bốn, năm."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "十",
+    "pinyin": "shí",
+    "type": "Số từ",
+    "meaning": "Số 10",
+    "examples": [
+      {
+        "zh": "一、二、三、四、五、八、十。",
+        "pinyin": "yī, èr, sān, sì, wǔ, bā, shí.",
+        "vi": "Một, hai, ba, bốn, năm, tám, mười."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "崔浩",
+    "pinyin": "Cuī Hào",
+    "type": "Tên riêng",
+    "meaning": "Thôi Hạo (Cui Hao)",
+    "examples": [
+      {
+        "zh": "崔浩是韩国人。",
+        "pinyin": "Cuī Hào shì Hánguó rén.",
+        "vi": "Thôi Hạo là người Hàn Quốc."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "美国",
+    "pinyin": "Měiguó",
+    "type": "Tên riêng",
+    "meaning": "Mỹ",
+    "examples": [
+      {
+        "zh": "马丁是美国人。",
+        "pinyin": "Mǎdīng shì Měiguó rén.",
+        "vi": "Martin là người Mỹ."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "韩国",
+    "pinyin": "Hánguó",
+    "type": "Tên riêng",
+    "meaning": "Hàn Quốc",
+    "examples": [
+      {
+        "zh": "他是韩国人。",
+        "pinyin": "tā shì Hánguó rén.",
+        "vi": "Cậu ấy là người Hàn Quốc."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "日本",
+    "pinyin": "Rìběn",
+    "type": "Tên riêng",
+    "meaning": "Nhật Bản",
+    "examples": [
+      {
+        "zh": "他是日本人。",
+        "pinyin": "tā shì Rìběn rén.",
+        "vi": "Anh ấy là người Nhật Bản."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "中国",
+    "pinyin": "Zhōngguó",
+    "type": "Tên riêng",
+    "meaning": "Trung Quốc",
+    "examples": [
+      {
+        "zh": "李老师是中国人。",
+        "pinyin": "Lǐ lǎoshī shì Zhōngguó rén.",
+        "vi": "Thầy Lý là người Trung Quốc."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "德国",
+    "pinyin": "Déguó",
+    "type": "Tên riêng",
+    "meaning": "Đức",
+    "examples": [
+      {
+        "zh": "林娜是德国人。",
+        "pinyin": "Línnà shì Déguó rén.",
+        "vi": "Linna là người Đức."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "英国",
+    "pinyin": "Yīngguó",
+    "type": "Tên riêng",
+    "meaning": "Anh",
+    "examples": [
+      {
+        "zh": "他是英国人。",
+        "pinyin": "tā shì Yīngguó rén.",
+        "vi": "Cậu ấy là người Anh."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "印度",
+    "pinyin": "Yìndù",
+    "type": "Tên riêng",
+    "meaning": "Ấn Độ",
+    "examples": [
+      {
+        "zh": "阿明是印度人。",
+        "pinyin": "Āmíng shì Yìndù rén.",
+        "vi": "A Minh là người Ấn Độ."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "意大利",
+    "pinyin": "Yìdàlì",
+    "type": "Tên riêng",
+    "meaning": "Ý",
+    "examples": [
+      {
+        "zh": "他是意大利人。",
+        "pinyin": "tā shì Yìdàlì rén.",
+        "vi": "Cậu ấy là người Ý."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "法国",
+    "pinyin": "Fǎguó",
+    "type": "Tên riêng",
+    "meaning": "Pháp",
+    "examples": [
+      {
+        "zh": "马丁是法国人。",
+        "pinyin": "Mǎdīng shì Fǎguó rén.",
+        "vi": "Martin là người Pháp."
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "hanzi": "泰国",
+    "pinyin": "Tàiguó",
+    "type": "Tên riêng",
+    "meaning": "Thái Lan",
+    "examples": [
+      {
+        "zh": "老师是泰国人。",
+        "pinyin": "lǎoshī shì Tàiguó rén.",
+        "vi": "Giáo viên là người Thái Lan."
+      }
+    ]
+  }
 ]

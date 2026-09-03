@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,7 +8,9 @@
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+SC:wght@100..900&display=swap"
+    rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -607,16 +610,20 @@
       .brand {
         font-size: 17px;
       }
+
       .tab-btn {
         font-size: 12px;
         padding: 6px 14px;
       }
+
       .pinyin-large {
         font-size: 22px;
       }
+
       .meaning-large {
         font-size: 20px;
       }
+
       .writer-box {
         width: 100px;
         height: 100px;
@@ -624,163 +631,164 @@
     }
   </style>
 </head>
+
 <body>
 
-<header class="app-header">
-  <div class="header-left">
-    <div class="brand">
-      <span>📖 Hán Ngữ</span>
-      <span class="brand-badge">Pro</span>
+  <header class="app-header">
+    <div class="header-left">
+      <div class="brand">
+        <span>📖 Hán Ngữ</span>
+        <span class="brand-badge">Pro</span>
+      </div>
+      <nav class="nav-tabs">
+        <button class="tab-btn active" id="tab-vocab" onclick="switchView('vocab')">📝 Từ vựng</button>
+        <button class="tab-btn" id="tab-flashcard" onclick="switchView('flashcard')">🎴 Ôn tập</button>
+      </nav>
     </div>
-    <nav class="nav-tabs">
-      <button class="tab-btn active" id="tab-vocab" onclick="switchView('vocab')">📝 Từ vựng</button>
-      <button class="tab-btn" id="tab-flashcard" onclick="switchView('flashcard')">🎴 Ôn tập</button>
-    </nav>
-  </div>
 
-  <div class="select-wrapper">
-    <select id="lessonSelect" onchange="loadAndRenderData()">
-      <option value="all">📚 Tất cả bài</option>
-    </select>
-    <span class="arrow">▼</span>
-  </div>
-</header>
+    <div class="select-wrapper">
+      <select id="lessonSelect" onchange="loadAndRenderData()">
+        <option value="all">📚 Tất cả bài</option>
+      </select>
+      <span class="arrow">▼</span>
+    </div>
+  </header>
 
-<div class="app-body">
+  <div class="app-body">
 
-  <!-- VIEW VOCAB -->
-  <div class="view-vocab" id="view-vocab">
-    <div class="sidebar" id="sidebarList"></div>
-    <div class="main-content">
-      <button class="back-btn" onclick="hideDetailOnMobile()">← Quay lại</button>
-      <div class="detail-card" id="detailCard">
-        <div style="color: #7a8aa8; font-weight: 500;">Chọn một từ để xem chi tiết</div>
+    <!-- VIEW VOCAB -->
+    <div class="view-vocab" id="view-vocab">
+      <div class="sidebar" id="sidebarList"></div>
+      <div class="main-content">
+        <button class="back-btn" onclick="hideDetailOnMobile()">← Quay lại</button>
+        <div class="detail-card" id="detailCard">
+          <div style="color: #7a8aa8; font-weight: 500;">Chọn một từ để xem chi tiết</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- VIEW FLASHCARD -->
-  <div class="view-flashcard" id="view-flashcard">
-    <div class="fc-card" onclick="flipFlashcard()" id="fcCard">
-      <span class="fc-hint">🔄 Lật thẻ</span>
-      <div class="fc-content" id="fcContent"></div>
+    <!-- VIEW FLASHCARD -->
+    <div class="view-flashcard" id="view-flashcard">
+      <div class="fc-card" onclick="flipFlashcard()" id="fcCard">
+        <span class="fc-hint">🔄 Lật thẻ</span>
+        <div class="fc-content" id="fcContent"></div>
+      </div>
+
+      <div class="fc-controls">
+        <button class="fc-btn" onclick="prevFlashcard()">←</button>
+        <span class="fc-progress" id="fcProgress">0 / 0</span>
+        <button class="fc-btn" onclick="nextFlashcard()">→</button>
+        <button class="fc-btn fc-btn-primary" onclick="shuffleFlashcards()">🔀 Xáo từ</button>
+      </div>
     </div>
 
-    <div class="fc-controls">
-      <button class="fc-btn" onclick="prevFlashcard()">←</button>
-      <span class="fc-progress" id="fcProgress">0 / 0</span>
-      <button class="fc-btn" onclick="nextFlashcard()">→</button>
-      <button class="fc-btn fc-btn-primary" onclick="shuffleFlashcards()">🔀 Xáo từ</button>
-    </div>
   </div>
 
-</div>
+  <script>
+    // ========================
+    //  CORE LOGIC
+    // ========================
 
-<script>
-  // ========================
-  //  CORE LOGIC
-  // ========================
+    let currentVocabList = [];
+    let activeIndex = -1;
+    let currentView = 'vocab';
 
-  let currentVocabList = [];
-  let activeIndex = -1;
-  let currentView = 'vocab';
+    let fcList = [];
+    let fcIndex = 0;
+    let isFlipped = false;
 
-  let fcList = [];
-  let fcIndex = 0;
-  let isFlipped = false;
-
-  // ----- PHÁT ÂM -----
-  function speakZh(text, e) {
-    if (e) e.stopPropagation();
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = 'zh-CN';
-      u.rate = 0.7;
-      u.volume = 1;
-      window.speechSynthesis.speak(u);
-    } else {
-      alert('Trình duyệt không hỗ trợ phát âm.');
-    }
-  }
-
-  // ----- FETCH JSON -----
-  async function fetchLessonData(num) {
-    try {
-      const r = await fetch(`lessons/lesson_${num}.json`);
-      if (!r.ok) return null;
-      return await r.json();
-    } catch {
-      return null;
-    }
-  }
-
-  // ----- TỰ ĐỘNG PHÁT HIỆN BÀI HỌC -----
-  async function discoverLessons() {
-    const select = document.getElementById('lessonSelect');
-    while (select.options.length > 1) select.remove(1);
-
-    let n = 1;
-    let found = false;
-    while (true) {
-      const data = await fetchLessonData(n);
-      if (!data) break;
-      found = true;
-      const opt = document.createElement('option');
-      opt.value = n;
-      opt.textContent = `Bài ${n}`;
-      select.appendChild(opt);
-      n++;
-    }
-    select.value = 'all';
-    await loadAndRenderData();
-  }
-
-  // ----- TẢI DỮ LIỆU -----
-  async function loadAndRenderData() {
-    const selected = document.getElementById('lessonSelect').value;
-    if (selected === 'all') {
-      const promises = [];
-      const options = Array.from(document.getElementById('lessonSelect').options).slice(1);
-      for (const opt of options) {
-        const num = parseInt(opt.value);
-        if (!isNaN(num)) promises.push(fetchLessonData(num));
+    // ----- PHÁT ÂM -----
+    function speakZh(text, e) {
+      if (e) e.stopPropagation();
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'zh-CN';
+        u.rate = 0.6;
+        u.volume = 1;
+        window.speechSynthesis.speak(u);
+      } else {
+        alert('Trình duyệt không hỗ trợ phát âm.');
       }
-      const results = await Promise.all(promises);
-      currentVocabList = results.filter(d => d !== null).flat();
-    } else {
-      const data = await fetchLessonData(parseInt(selected));
-      currentVocabList = data || [];
     }
 
-    renderSidebar();
-    initFlashcards();
-
-    if (window.innerWidth > 820 && currentVocabList.length > 0) {
-      selectWord(0);
+    // ----- FETCH JSON -----
+    async function fetchLessonData(num) {
+      try {
+        const r = await fetch(`lessons/lesson_${num}.json`);
+        if (!r.ok) return null;
+        return await r.json();
+      } catch {
+        return null;
+      }
     }
-  }
 
-  // ----- SWITCH VIEW -----
-  function switchView(view) {
-    currentView = view;
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById(`tab-${view}`).classList.add('active');
+    // ----- TỰ ĐỘNG PHÁT HIỆN BÀI HỌC -----
+    async function discoverLessons() {
+      const select = document.getElementById('lessonSelect');
+      while (select.options.length > 1) select.remove(1);
 
-    if (view === 'vocab') {
-      document.getElementById('view-vocab').style.display = 'flex';
-      document.getElementById('view-flashcard').style.display = 'none';
-    } else {
-      document.getElementById('view-vocab').style.display = 'none';
-      document.getElementById('view-flashcard').style.display = 'flex';
-      renderFlashcard();
+      let n = 1;
+      let found = false;
+      while (true) {
+        const data = await fetchLessonData(n);
+        if (!data) break;
+        found = true;
+        const opt = document.createElement('option');
+        opt.value = n;
+        opt.textContent = `Bài ${n}`;
+        select.appendChild(opt);
+        n++;
+      }
+      select.value = 'all';
+      await loadAndRenderData();
     }
-  }
 
-  // ----- SIDEBAR -----
-  function renderSidebar() {
-    const sidebar = document.getElementById('sidebarList');
-    sidebar.innerHTML = currentVocabList.map((item, i) => `
+    // ----- TẢI DỮ LIỆU -----
+    async function loadAndRenderData() {
+      const selected = document.getElementById('lessonSelect').value;
+      if (selected === 'all') {
+        const promises = [];
+        const options = Array.from(document.getElementById('lessonSelect').options).slice(1);
+        for (const opt of options) {
+          const num = parseInt(opt.value);
+          if (!isNaN(num)) promises.push(fetchLessonData(num));
+        }
+        const results = await Promise.all(promises);
+        currentVocabList = results.filter(d => d !== null).flat();
+      } else {
+        const data = await fetchLessonData(parseInt(selected));
+        currentVocabList = data || [];
+      }
+
+      renderSidebar();
+      initFlashcards();
+
+      if (window.innerWidth > 820 && currentVocabList.length > 0) {
+        selectWord(0);
+      }
+    }
+
+    // ----- SWITCH VIEW -----
+    function switchView(view) {
+      currentView = view;
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(`tab-${view}`).classList.add('active');
+
+      if (view === 'vocab') {
+        document.getElementById('view-vocab').style.display = 'flex';
+        document.getElementById('view-flashcard').style.display = 'none';
+      } else {
+        document.getElementById('view-vocab').style.display = 'none';
+        document.getElementById('view-flashcard').style.display = 'flex';
+        renderFlashcard();
+      }
+    }
+
+    // ----- SIDEBAR -----
+    function renderSidebar() {
+      const sidebar = document.getElementById('sidebarList');
+      sidebar.innerHTML = currentVocabList.map((item, i) => `
       <div class="vocab-item ${i === activeIndex ? 'active' : ''}" onclick="selectWord(${i})">
         <div class="info">
           <span class="hanzi">${item.hanzi}</span>
@@ -789,18 +797,18 @@
         <button class="audio-btn" onclick="speakZh('${item.hanzi}', event)">🔊</button>
       </div>
     `).join('');
-  }
+    }
 
-  // ----- CHỌN TỪ -----
-  function selectWord(index) {
-    activeIndex = index;
-    renderSidebar();
-    document.getElementById('view-vocab').classList.add('show-detail');
+    // ----- CHỌN TỪ -----
+    function selectWord(index) {
+      activeIndex = index;
+      renderSidebar();
+      document.getElementById('view-vocab').classList.add('show-detail');
 
-    const item = currentVocabList[index];
-    const card = document.getElementById('detailCard');
+      const item = currentVocabList[index];
+      const card = document.getElementById('detailCard');
 
-    card.innerHTML = `
+      card.innerHTML = `
       <div class="stroke-container" id="strokeContainer"></div>
       <div class="word-header">
         <span class="pinyin-large">${item.pinyin}</span>
@@ -825,97 +833,97 @@
       </div>
     `;
 
-    renderHanziWriter('strokeContainer', item.hanzi, window.innerWidth <= 820 ? 120 : 160);
-  }
+      renderHanziWriter('strokeContainer', item.hanzi, window.innerWidth <= 820 ? 120 : 160);
+    }
 
-  function hideDetailOnMobile() {
-    document.getElementById('view-vocab').classList.remove('show-detail');
-  }
+    function hideDetailOnMobile() {
+      document.getElementById('view-vocab').classList.remove('show-detail');
+    }
 
-  // ----- FLASHCARD -----
-  function initFlashcards() {
-    fcList = [...currentVocabList];
-    fcIndex = 0;
-    isFlipped = false;
-    renderFlashcard();
-  }
-
-  function shuffleFlashcards() {
-    fcList.sort(() => Math.random() - 0.5);
-    fcIndex = 0;
-    isFlipped = false;
-    renderFlashcard();
-  }
-
-  function flipFlashcard() {
-    if (!fcList.length) return;
-    isFlipped = !isFlipped;
-    renderFlashcard();
-  }
-
-  function nextFlashcard() {
-    if (fcIndex < fcList.length - 1) {
-      fcIndex++;
+    // ----- FLASHCARD -----
+    function initFlashcards() {
+      fcList = [...currentVocabList];
+      fcIndex = 0;
       isFlipped = false;
       renderFlashcard();
     }
-  }
 
-  function prevFlashcard() {
-    if (fcIndex > 0) {
-      fcIndex--;
+    function shuffleFlashcards() {
+      fcList.sort(() => Math.random() - 0.5);
+      fcIndex = 0;
       isFlipped = false;
       renderFlashcard();
     }
-  }
 
-  function renderFlashcard() {
-    const container = document.getElementById('fcContent');
-    const progress = document.getElementById('fcProgress');
-
-    if (!fcList.length) {
-      container.innerHTML = '<div style="color:#9aabbf;">Không có từ vựng</div>';
-      progress.innerText = '0 / 0';
-      return;
+    function flipFlashcard() {
+      if (!fcList.length) return;
+      isFlipped = !isFlipped;
+      renderFlashcard();
     }
 
-    const item = fcList[fcIndex];
-    progress.innerText = `${fcIndex + 1} / ${fcList.length}`;
+    function nextFlashcard() {
+      if (fcIndex < fcList.length - 1) {
+        fcIndex++;
+        isFlipped = false;
+        renderFlashcard();
+      }
+    }
 
-    if (!isFlipped) {
-      // Mặt trước: hiển thị chữ Hán + nút nghe
-      container.innerHTML = `
+    function prevFlashcard() {
+      if (fcIndex > 0) {
+        fcIndex--;
+        isFlipped = false;
+        renderFlashcard();
+      }
+    }
+
+    function renderFlashcard() {
+      const container = document.getElementById('fcContent');
+      const progress = document.getElementById('fcProgress');
+
+      if (!fcList.length) {
+        container.innerHTML = '<div style="color:#9aabbf;">Không có từ vựng</div>';
+        progress.innerText = '0 / 0';
+        return;
+      }
+
+      const item = fcList[fcIndex];
+      progress.innerText = `${fcIndex + 1} / ${fcList.length}`;
+
+      if (!isFlipped) {
+        // Mặt trước: hiển thị chữ Hán + nút nghe
+        container.innerHTML = `
         <div class="fc-stroke-container" id="fcStrokeContainer"></div>
         <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}', event)" style="margin-top:8px;">🔊</button>
         <div class="fc-pinyin">${item.pinyin}</div>
       `;
-      renderHanziWriter('fcStrokeContainer', item.hanzi, 120);
-    } else {
-      // Mặt sau: hiển thị nghĩa và thông tin
-      container.innerHTML = `
+        renderHanziWriter('fcStrokeContainer', item.hanzi, 120);
+      } else {
+        // Mặt sau: hiển thị nghĩa và thông tin
+        container.innerHTML = `
         <div class="fc-pinyin" style="font-size:20px;">${item.pinyin}</div>
         <div class="fc-type">${item.type}</div>
         <div class="fc-meaning">${item.meaning}</div>
         <div class="fc-lesson">Bài ${item.lesson}</div>
         <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}', event)" style="margin-top:12px;">🔊</button>
       `;
+      }
     }
-  }
 
-  // ----- VẼ NÉT -----
-  function renderHanziWriter(containerId, text, boxSize) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    container.innerHTML = '';
+    // ----- VẼ NÉT -----
+    function renderHanziWriter(containerId, text, boxSize) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+      container.innerHTML = '';
 
-    text.split('').forEach((char, idx) => {
-      if (/[\u4e00-\u9fa5]/.test(char)) {
-        const wrapper = document.createElement('div');
-        wrapper.className = 'writer-box';
-        wrapper.style.width = boxSize + 'px';
-        wrapper.style.height = boxSize + 'px';
+      text.split('').forEach((char, idx) => {
+        if (/[\u4e00-\u9fa5]/.test(char)) {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'writer-box';
+          wrapper.style.width = boxSize + 'px';
+          wrapper.style.height = boxSize + 'px';
 
-        wrapper.innerHTML = `
+          wrapper.innerHTML = `
           <svg class="grid" viewBox="0 0 100 100">
             <line x1="0" y1="50" x2="100" y2="50" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
             <line x1="50" y1="0" x2="50" y2="100" stroke="#e2e8f0" stroke-dasharray="2,2" stroke-width="0.8"/>
@@ -924,42 +932,43 @@
           </svg>
           <div id="${containerId}-target-${idx}" class="target"></div>
         `;
-        container.appendChild(wrapper);
+          container.appendChild(wrapper);
 
-        const writer = HanziWriter.create(`${containerId}-target-${idx}`, char, {
-          width: boxSize,
-          height: boxSize,
-          padding: 8,
-          showOutline: true,
-          strokeColor: '#0b1a33',
-          outlineColor: '#e2e8f0',
-          strokeAnimationSpeed: 1.4,
-          delayBetweenStrokes: 25
-        });
-        writer.animateCharacter();
-
-        wrapper.onclick = (e) => {
-          e.stopPropagation();
+          const writer = HanziWriter.create(`${containerId}-target-${idx}`, char, {
+            width: boxSize,
+            height: boxSize,
+            padding: 8,
+            showOutline: true,
+            strokeColor: '#0b1a33',
+            outlineColor: '#e2e8f0',
+            strokeAnimationSpeed: 1.4,
+            delayBetweenStrokes: 25
+          });
           writer.animateCharacter();
-          speakZh(char);
-        };
+
+          wrapper.onclick = (e) => {
+            e.stopPropagation();
+            writer.animateCharacter();
+            speakZh(char);
+          };
+        }
+      });
+    }
+
+    // ----- PHÍM TẮT -----
+    document.addEventListener('keydown', (e) => {
+      if (currentView === 'flashcard') {
+        if (e.code === 'Space') { e.preventDefault(); flipFlashcard(); }
+        if (e.code === 'ArrowRight') nextFlashcard();
+        if (e.code === 'ArrowLeft') prevFlashcard();
       }
     });
-  }
 
-  // ----- PHÍM TẮT -----
-  document.addEventListener('keydown', (e) => {
-    if (currentView === 'flashcard') {
-      if (e.code === 'Space') { e.preventDefault(); flipFlashcard(); }
-      if (e.code === 'ArrowRight') nextFlashcard();
-      if (e.code === 'ArrowLeft') prevFlashcard();
-    }
-  });
-
-  // ----- KHỞI CHẠY -----
-  window.onload = function () {
-    discoverLessons();
-  };
-</script>
+    // ----- KHỞI CHẠY -----
+    window.onload = function () {
+      discoverLessons();
+    };
+  </script>
 </body>
+
 </html>
