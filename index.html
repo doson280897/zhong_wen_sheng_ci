@@ -757,31 +757,36 @@
       const item = currentVocabList[index];
       const card = document.getElementById('detailCard');
 
-      card.innerHTML = `
-        <div class="swipe-hint">👈 Vuốt / Kéo chuột hoặc dùng phím ◄ ► để chuyển từ 👉</div>
-        <div class="stroke-container" id="strokeContainer"></div>
-        <div class="word-header">
-          <span class="pinyin-large">${item.pinyin}</span>
-          <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}')">🔊</button>
+      // Xử lý danh sách ví dụ đúng cách
+      const examplesHtml = (item.examples && item.examples.length > 0)
+        ? item.examples.map(ex => `
+        <div class="example-item">
+          <button class="audio-btn" onclick="speakZh('${ex.zh}', event)">🔊</button>
+          <div class="ex-content">
+            <div class="ex-zh">${ex.zh}</div>
+            <div class="ex-py">${ex.pinyin}</div>
+            <div class="ex-vi">${ex.vi}</div>
+          </div>
         </div>
-        <div class="type-badge">${item.type || ''}</div>
-        <div class="meaning-large">${item.meaning}</div>
-        <div class="meta-tag">Bài ${item.lesson}</div>
+      `).join('')
+        : '<div style="color: var(--text-muted);">Chưa có ví dụ</div>';
 
-        <div class="examples-box">
-          <div class="examples-title">📌 Ví dụ</div>
-          ${(item.examples || []).map(ex => `
-            <div class="example-item">
-              <button class="audio-btn" onclick="speakZh('${ex.zh}', event)">🔊</button>
-              <div class="ex-content">
-                <div class="ex-zh">${ex.zh}</div>
-                <div class="ex-py">${ex.pinyin}</div>
-                <div class="ex-vi">${ex.vi}</div>
-              </div>
-            </div>
-          `).join('') || '<div style="color: var(--text-muted);">Chưa có ví dụ</div>'}
-        </div>
-      `;
+      card.innerHTML = `
+    <div class="swipe-hint">👈 Vuốt / Kéo chuột hoặc dùng phím ◄ ► để chuyển từ 👉</div>
+    <div class="stroke-container" id="strokeContainer"></div>
+    <div class="word-header">
+      <span class="pinyin-large">${item.pinyin}</span>
+      <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}')">🔊</button>
+    </div>
+    <div class="type-badge">${item.type || ''}</div>
+    <div class="meaning-large">${item.meaning}</div>
+    <div class="meta-tag">Bài ${item.lesson}</div>
+
+    <div class="examples-box">
+      <div class="examples-title">📌 Ví dụ</div>
+      ${examplesHtml}
+    </div>
+  `;
 
       renderHanziWriter('strokeContainer', item.hanzi, window.innerWidth <= 480 ? 110 : 140);
     }
