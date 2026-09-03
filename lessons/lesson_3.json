@@ -10,6 +10,16 @@
         "zh": "请问，您贵姓？",
         "pinyin": "qǐngwèn, nín guìxìng?",
         "vi": "Xin hỏi, họ của ngài là gì ạ?"
+      },
+      {
+        "zh": "请问，你叫什么名字？",
+        "pinyin": "qǐngwèn, nǐ jiào shénme míngzi?",
+        "vi": "Xin hỏi, bạn tên là gì?"
+      },
+      {
+        "zh": "请问，您是中国人吗？",
+        "pinyin": "qǐngwèn, nín shì Zhōngguó rén ma?",
+        "vi": "Xin hỏi, ngài là người Trung Quốc phải không?"
       }
     ]
   },
@@ -24,6 +34,16 @@
         "zh": "请问，你叫什么名字？",
         "pinyin": "qǐngwèn, nǐ jiào shénme míngzi?",
         "vi": "Xin hỏi, bạn tên là gì?"
+      },
+      {
+        "zh": "请进！",
+        "pinyin": "qǐng jìn!",
+        "vi": "Mời vào!"
+      },
+      {
+        "zh": "请坐。",
+        "pinyin": "qǐng zuò.",
+        "vi": "Mời ngồi."
       }
     ]
   },
@@ -38,6 +58,16 @@
         "zh": "我问李老师。",
         "pinyin": "wǒ wèn Lǐ lǎoshī.",
         "vi": "Tôi hỏi thầy Lý."
+      },
+      {
+        "zh": "你问什么？",
+        "pinyin": "nǐ wèn shénme?",
+        "vi": "Bạn hỏi gì?"
+      },
+      {
+        "zh": "请问，您贵姓？",
+        "pinyin": "qǐngwèn, nín guìxìng?",
+        "vi": "Xin hỏi, ngài họ gì ạ?"
       }
     ]
   },
@@ -52,6 +82,16 @@
         "zh": "我叫阿明。",
         "pinyin": "wǒ jiào Āmíng.",
         "vi": "Tôi tên là A Minh."
+      },
+      {
+        "zh": "他叫什么名字？",
+        "pinyin": "tā jiào shénme míngzi?",
+        "vi": "Anh ấy tên là gì?"
+      },
+      {
+        "zh": "我叫李一民。",
+        "pinyin": "wǒ jiào Lǐ Yīmín.",
+        "vi": "Tôi tên là Lý Nhất Dân."
       }
     ]
   },
@@ -66,6 +106,16 @@
         "zh": "你叫什么名字？",
         "pinyin": "nǐ jiào shénme míngzi?",
         "vi": "Bạn tên là gì?"
+      },
+      {
+        "zh": "这是什么？",
+        "pinyin": "zhè shì shénme?",
+        "vi": "Đây là cái gì?"
+      },
+      {
+        "zh": "你做什么工作？",
+        "pinyin": "nǐ zuò shénme gōngzuò?",
+        "vi": "Bạn làm nghề gì?"
       }
     ]
   },
@@ -80,6 +130,16 @@
         "zh": "他叫什么名字？",
         "pinyin": "tā jiào shénme míngzi?",
         "vi": "Cậu ấy tên là gì?"
+      },
+      {
+        "zh": "我的名字是林娜。",
+        "pinyin": "wǒ de míngzi shì Línnà.",
+        "vi": "Tên của tôi là Linna."
+      },
+      {
+        "zh": "请问，你的名字？",
+        "pinyin": "qǐngwèn, nǐ de míngzi?",
+        "vi": "Xin hỏi, tên bạn là gì?"
       }
     ]
   },
@@ -94,6 +154,16 @@
         "zh": "我姓李，叫李一民。",
         "pinyin": "wǒ xìng Lǐ, jiào Lǐ Yīmín.",
         "vi": "Tôi họ Lý, tên là Lý Nhất Dân."
+      },
+      {
+        "zh": "您贵姓？",
+        "pinyin": "nín guìxìng?",
+        "vi": "Họ của ngài là gì ạ?"
+      },
+      {
+        "zh": "她姓王。",
+        "pinyin": "tā xìng Wáng.",
+        "vi": "Cô ấy họ Vương."
       }
     ]
   },
@@ -108,6 +178,16 @@
         "zh": "认识你，我很高兴。",
         "pinyin": "rènshi nǐ, wǒ hěn gāoxìng.",
         "vi": "Rất vui được quen biết bạn."
+      },
+      {
+        "zh": "我认识这个人。",
+        "pinyin": "wǒ rènshi zhège rén.",
+        "vi": "Tôi quen người này."
+      },
+      {
+        "zh": "你也认识他吗？",
+        "pinyin": "nǐ yě rènshi tā ma?",
+        "vi": "Bạn cũng quen anh ấy à?"
       }
     ]
   },
@@ -122,6 +202,16 @@
         "zh": "我很高兴。",
         "pinyin": "wǒ hěn gāoxìng.",
         "vi": "Tôi rất vui."
+      },
+      {
+        "zh": "中国很大。",
+        "pinyin": "Zhōngguó hěn dà.",
+        "vi": "Trung Quốc rất lớn."
+      },
+      {
+        "zh": "我很好，谢谢。",
+        "pinyin": "wǒ hěn hǎo, xièxie.",
+        "vi": "Tôi rất khỏe, cảm ơn."
       }
     ]
   },
@@ -136,6 +226,16 @@
         "zh": "认识你们，我也很高兴。",
         "pinyin": "rènshi nǐmen, wǒ yě hěn gāoxìng.",
         "vi": "Quen biết các bạn, tôi cũng rất vui."
+      },
+      {
+        "zh": "你今天高兴吗？",
+        "pinyin": "nǐ jīntiān gāoxìng ma?",
+        "vi": "Hôm nay bạn vui không?"
+      },
+      {
+        "zh": "老师很高兴。",
+        "pinyin": "lǎoshī hěn gāoxìng.",
+        "vi": "Thầy/cô giáo rất vui."
       }
     ]
   },
@@ -150,6 +250,16 @@
         "zh": "我是中国人，他也是中国人。",
         "pinyin": "wǒ shì Zhōngguó rén, tā yě shì Zhōngguó rén.",
         "vi": "Tôi là người Trung Quốc, anh ấy cũng là người Trung Quốc."
+      },
+      {
+        "zh": "我姓李，也姓李？",
+        "pinyin": "wǒ xìng Lǐ, nǐ yě xìng Lǐ?",
+        "vi": "Tôi họ Lý, bạn cũng họ Lý à?"
+      },
+      {
+        "zh": "我也想去。",
+        "pinyin": "wǒ yě xiǎng qù.",
+        "vi": "Tôi cũng muốn đi."
       }
     ]
   },
@@ -164,6 +274,11 @@
         "zh": "请问，您贵姓？",
         "pinyin": "qǐngwèn, nín guìxìng?",
         "vi": "Xin hỏi, họ của ngài là gì ạ?"
+      },
+      {
+        "zh": "您贵姓？我姓王。",
+        "pinyin": "nín guìxìng? wǒ xìng Wáng.",
+        "vi": "Ngài họ gì ạ? Tôi họ Vương."
       }
     ]
   },
@@ -178,6 +293,16 @@
         "zh": "五、六、七。",
         "pinyin": "wǔ, liù, qī.",
         "vi": "Năm, sáu, bảy."
+      },
+      {
+        "zh": "六个人。",
+        "pinyin": "liù gè rén.",
+        "vi": "Sáu người."
+      },
+      {
+        "zh": "六点整。",
+        "pinyin": "liù diǎn zhěng.",
+        "vi": "Đúng 6 giờ."
       }
     ]
   },
@@ -192,6 +317,16 @@
         "zh": "七、八、九。",
         "pinyin": "qī, bā, jiǔ.",
         "vi": "Bảy, tám, chín."
+      },
+      {
+        "zh": "七点钟。",
+        "pinyin": "qī diǎn zhōng.",
+        "vi": "7 giờ."
+      },
+      {
+        "zh": "七个苹果。",
+        "pinyin": "qī gè píngguǒ.",
+        "vi": "Bảy quả táo."
       }
     ]
   },
@@ -206,6 +341,16 @@
         "zh": "八、九、十。",
         "pinyin": "bā, jiǔ, shí.",
         "vi": "Tám, chín, mười."
+      },
+      {
+        "zh": "九本书。",
+        "pinyin": "jiǔ běn shū.",
+        "vi": "Chín cuốn sách."
+      },
+      {
+        "zh": "九点上课。",
+        "pinyin": "jiǔ diǎn shàngkè.",
+        "vi": "Học lúc 9 giờ."
       }
     ]
   },
@@ -220,6 +365,11 @@
         "zh": "山田佑是日本人。",
         "pinyin": "Shāntián Yòu shì Rìběn rén.",
         "vi": "Sơn Điền Hữu là người Nhật."
+      },
+      {
+        "zh": "山田佑，你好！",
+        "pinyin": "Shāntián Yòu, nǐ hǎo!",
+        "vi": "Chào Sơn Điền Hữu!"
       }
     ]
   },
@@ -234,6 +384,11 @@
         "zh": "他姓李，叫李一民。",
         "pinyin": "tā xìng Lǐ, jiào Lǐ Yīmín.",
         "vi": "Thầy ấy họ Lý, tên là Lý Nhất Dân."
+      },
+      {
+        "zh": "李老师是中国人。",
+        "pinyin": "Lǐ lǎoshī shì Zhōngguó rén.",
+        "vi": "Thầy Lý là người Trung Quốc."
       }
     ]
   },
@@ -248,6 +403,11 @@
         "zh": "他姓赵。",
         "pinyin": "tā xìng Zhào.",
         "vi": "Anh ấy họ Triệu."
+      },
+      {
+        "zh": "赵老师好！",
+        "pinyin": "Zhào lǎoshī hǎo!",
+        "vi": "Chào thầy/cô Triệu!"
       }
     ]
   },
@@ -262,6 +422,11 @@
         "zh": "老师姓王。",
         "pinyin": "lǎoshī xìng Wáng.",
         "vi": "Thầy/cô giáo họ Vương."
+      },
+      {
+        "zh": "王先生，你好！",
+        "pinyin": "Wáng xiānsheng, nǐ hǎo!",
+        "vi": "Chào ông Vương!"
       }
     ]
   },
@@ -276,6 +441,11 @@
         "zh": "我姓张。",
         "pinyin": "wǒ xìng Zhāng.",
         "vi": "Tôi họ Trương."
+      },
+      {
+        "zh": "张小姐是老师吗？",
+        "pinyin": "Zhāng xiǎojie shì lǎoshī ma?",
+        "vi": "Cô Trương là giáo viên à?"
       }
     ]
   },
@@ -290,6 +460,11 @@
         "zh": "他叫刘五。",
         "pinyin": "tā jiào Liú Wǔ.",
         "vi": "Cậu ấy tên là Lưu Ngũ."
+      },
+      {
+        "zh": "刘老师，早上好！",
+        "pinyin": "Liú lǎoshī, zǎoshang hǎo!",
+        "vi": "Chào thầy/cô Lưu, chúc thầy/cô buổi sáng tốt lành!"
       }
     ]
   },
@@ -304,6 +479,11 @@
         "zh": "她姓马。",
         "pinyin": "tā xìng Mǎ.",
         "vi": "Cô ấy họ Mã."
+      },
+      {
+        "zh": "马先生是英国人。",
+        "pinyin": "Mǎ xiānsheng shì Yīngguó rén.",
+        "vi": "Ông Mã là người Anh."
       }
     ]
   },
@@ -318,6 +498,11 @@
         "zh": "陈老师是中国人。",
         "pinyin": "Chén lǎoshī shì Zhōngguó rén.",
         "vi": "Cô Trần là người Trung Quốc."
+      },
+      {
+        "zh": "你姓陈吗？",
+        "pinyin": "nǐ xìng Chén ma?",
+        "vi": "Bạn họ Trần à?"
       }
     ]
   },
@@ -332,6 +517,11 @@
         "zh": "他姓孙。",
         "pinyin": "tā xìng Sūn.",
         "vi": "Anh ấy họ Tôn."
+      },
+      {
+        "zh": "孙先生，您好！",
+        "pinyin": "Sūn xiānsheng, nín hǎo!",
+        "vi": "Chào ông Tôn!"
       }
     ]
   },
@@ -346,6 +536,11 @@
         "zh": "黄老师，早上好！",
         "pinyin": "Huáng lǎoshī, zǎoshang hǎo!",
         "vi": "Em chào thầy/cô Hoàng, chúc thầy/cô buổi sáng tốt lành!"
+      },
+      {
+        "zh": "我姓黄。",
+        "pinyin": "wǒ xìng Huáng.",
+        "vi": "Tôi họ Hoàng."
       }
     ]
   },
@@ -360,6 +555,11 @@
         "zh": "他姓高，叫高九。",
         "pinyin": "tā xìng Gāo, jiào Gāo Jiǔ.",
         "vi": "Cậu ấy họ Cao, tên là Cao Cửu."
+      },
+      {
+        "zh": "高老师好！",
+        "pinyin": "Gāo lǎoshī hǎo!",
+        "vi": "Chào thầy/cô Cao!"
       }
     ]
   }

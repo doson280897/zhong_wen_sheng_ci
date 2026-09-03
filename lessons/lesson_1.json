@@ -10,6 +10,16 @@
         "zh": "你好，老师！",
         "pinyin": "nǐ hǎo, lǎoshī!",
         "vi": "Em chào thầy/cô giáo ạ!"
+      },
+      {
+        "zh": "你好，马丁！",
+        "pinyin": "nǐ hǎo, Mǎdīng!",
+        "vi": "Chào Martin!"
+      },
+      {
+        "zh": "你们好！",
+        "pinyin": "nǐmen hǎo!",
+        "vi": "Chào các bạn!"
       }
     ]
   },
@@ -24,6 +34,16 @@
         "zh": "你好！",
         "pinyin": "nǐ hǎo!",
         "vi": "Chào bạn!"
+      },
+      {
+        "zh": "你是老师吗？",
+        "pinyin": "nǐ shì lǎoshī ma?",
+        "vi": "Bạn là giáo viên à?"
+      },
+      {
+        "zh": "我认识你。",
+        "pinyin": "wǒ rènshi nǐ.",
+        "vi": "Tôi quen bạn."
       }
     ]
   },
@@ -38,6 +58,16 @@
         "zh": "你好。",
         "pinyin": "nǐ hǎo.",
         "vi": "Chào bạn."
+      },
+      {
+        "zh": "我很好，谢谢。",
+        "pinyin": "wǒ hěn hǎo, xièxie.",
+        "vi": "Tôi rất khỏe, cảm ơn."
+      },
+      {
+        "zh": "这本书很好。",
+        "pinyin": "zhè běn shū hěn hǎo.",
+        "vi": "Cuốn sách này rất hay."
       }
     ]
   },
@@ -52,6 +82,16 @@
         "zh": "您好，老师！",
         "pinyin": "nín hǎo, lǎoshī!",
         "vi": "Em chào thầy/cô giáo ạ!"
+      },
+      {
+        "zh": "您贵姓？",
+        "pinyin": "nín guìxìng?",
+        "vi": "Ngài họ gì ạ?"
+      },
+      {
+        "zh": "请问，您是哪国人？",
+        "pinyin": "qǐngwèn, nín shì nǎguó rén?",
+        "vi": "Xin hỏi, ngài là người nước nào?"
       }
     ]
   },
@@ -66,6 +106,11 @@
         "zh": "零、一、二。",
         "pinyin": "líng, yī, èr.",
         "vi": "Không, một, hai."
+      },
+      {
+        "zh": "电话号码是零。",
+        "pinyin": "diànhuà hàomǎ shì líng.",
+        "vi": "Số điện thoại là số không."
       }
     ]
   },
@@ -80,6 +125,16 @@
         "zh": "一、二、五。",
         "pinyin": "yī, èr, wǔ.",
         "vi": "Một, hai, năm."
+      },
+      {
+        "zh": "一本书。",
+        "pinyin": "yī běn shū.",
+        "vi": "Một cuốn sách."
+      },
+      {
+        "zh": "我有一本书。",
+        "pinyin": "wǒ yǒu yī běn shū.",
+        "vi": "Tôi có một cuốn sách."
       }
     ]
   },
@@ -94,6 +149,16 @@
         "zh": "一、二、八。",
         "pinyin": "yī, èr, bā.",
         "vi": "Một, hai, tám."
+      },
+      {
+        "zh": "两个学生。",
+        "pinyin": "liǎng gè xuésheng.",
+        "vi": "Hai học sinh."
+      },
+      {
+        "zh": "二年级。",
+        "pinyin": "èr niánjí.",
+        "vi": "Lớp hai."
       }
     ]
   },
@@ -108,6 +173,16 @@
         "zh": "一、二、五、八。",
         "pinyin": "yī, èr, wǔ, bā.",
         "vi": "Một, hai, năm, tám."
+      },
+      {
+        "zh": "五个人。",
+        "pinyin": "wǔ gè rén.",
+        "vi": "Năm người."
+      },
+      {
+        "zh": "五点十分。",
+        "pinyin": "wǔ diǎn shí fēn.",
+        "vi": "5 giờ 10 phút."
       }
     ]
   },
@@ -122,6 +197,16 @@
         "zh": "五、八。",
         "pinyin": "wǔ, bā.",
         "vi": "Năm, tám."
+      },
+      {
+        "zh": "八个苹果。",
+        "pinyin": "bā gè píngguǒ.",
+        "vi": "Tám quả táo."
+      },
+      {
+        "zh": "八点钟。",
+        "pinyin": "bā diǎn zhōng.",
+        "vi": "8 giờ."
       }
     ]
   },
@@ -136,6 +221,11 @@
         "zh": "马丁，你好！",
         "pinyin": "Mǎdīng, nǐ hǎo!",
         "vi": "Chào Martin!"
+      },
+      {
+        "zh": "马丁是老师。",
+        "pinyin": "Mǎdīng shì lǎoshī.",
+        "vi": "Martin là giáo viên."
       }
     ]
   },
@@ -150,6 +240,11 @@
         "zh": "林娜，你好！",
         "pinyin": "Línnà, nǐ hǎo!",
         "vi": "Chào Linna!"
+      },
+      {
+        "zh": "林娜是学生。",
+        "pinyin": "Línnà shì xuésheng.",
+        "vi": "Linna là học sinh."
       }
     ]
   },
@@ -164,6 +259,11 @@
         "zh": "李一民老师，您好！",
         "pinyin": "Lǐ Yīmín lǎoshī, nín hǎo!",
         "vi": "Em chào thầy Lý Nhất Dân!"
+      },
+      {
+        "zh": "李一民是中国人。",
+        "pinyin": "Lǐ Yīmín shì Zhōngguó rén.",
+        "vi": "Lý Nhất Dân là người Trung Quốc."
       }
     ]
   },
@@ -178,6 +278,11 @@
         "zh": "阿明，你好！",
         "pinyin": "Āmíng, nǐ hǎo!",
         "vi": "Chào A Minh!"
+      },
+      {
+        "zh": "阿明是越南人。",
+        "pinyin": "Āmíng shì Yuènán rén.",
+        "vi": "A Minh là người Việt Nam."
       }
     ]
   },
@@ -192,6 +297,11 @@
         "zh": "你们好！",
         "pinyin": "nǐmen hǎo!",
         "vi": "Chào các bạn!"
+      },
+      {
+        "zh": "你们是同学吗？",
+        "pinyin": "nǐmen shì tóngxué ma?",
+        "vi": "Các bạn là bạn học à?"
       }
     ]
   },
@@ -206,6 +316,16 @@
         "zh": "老师，您好！",
         "pinyin": "lǎoshī, nín hǎo!",
         "vi": "Em chào thầy/cô giáo ạ!"
+      },
+      {
+        "zh": "王老师是我的汉语老师。",
+        "pinyin": "Wáng lǎoshī shì wǒ de Hànyǔ lǎoshī.",
+        "vi": "Thầy Vương là giáo viên tiếng Hán của tôi."
+      },
+      {
+        "zh": "老师好！",
+        "pinyin": "lǎoshī hǎo!",
+        "vi": "Chào thầy/cô giáo!"
       }
     ]
   }

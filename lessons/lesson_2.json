@@ -10,6 +10,16 @@
         "zh": "老师，早上好！",
         "pinyin": "lǎoshī, zǎoshang hǎo!",
         "vi": "Em chào thầy/cô, chúc thầy/cô buổi sáng tốt lành!"
+      },
+      {
+        "zh": "我早上八点上课。",
+        "pinyin": "wǒ zǎoshang bā diǎn shàngkè.",
+        "vi": "Tôi học lúc 8 giờ sáng."
+      },
+      {
+        "zh": "早上吃什么？",
+        "pinyin": "zǎoshang chī shénme?",
+        "vi": "Buổi sáng ăn gì?"
       }
     ]
   },
@@ -24,6 +34,21 @@
         "zh": "我是林娜。",
         "pinyin": "wǒ shì Línnà.",
         "vi": "Tôi là Linna."
+      },
+      {
+        "zh": "他是中国人。",
+        "pinyin": "tā shì Zhōngguó rén.",
+        "vi": "Anh ấy là người Trung Quốc."
+      },
+      {
+        "zh": "我是老师。",
+        "pinyin": "wǒ shì lǎoshī.",
+        "vi": "Tôi là giáo viên."
+      },
+      {
+        "zh": "你是哪国人？",
+        "pinyin": "nǐ shì nǎ guó rén?",
+        "vi": "Bạn là người nước nào?"
       }
     ]
   },
@@ -38,6 +63,16 @@
         "zh": "你是哪国人？",
         "pinyin": "nǐ shì nǎ guó rén?",
         "vi": "Bạn là người nước nào?"
+      },
+      {
+        "zh": "哪个是你的老师？",
+        "pinyin": "nǎ ge shì nǐ de lǎoshī?",
+        "vi": "Ai là giáo viên của bạn?"
+      },
+      {
+        "zh": "你住在哪儿？",
+        "pinyin": "nǐ zhù zài nǎr?",
+        "vi": "Bạn ở đâu?"
       }
     ]
   },
@@ -52,6 +87,16 @@
         "zh": "你是哪国人？",
         "pinyin": "nǐ shì nǎ guó rén?",
         "vi": "Bạn là người nước nào?"
+      },
+      {
+        "zh": "中国很大。",
+        "pinyin": "Zhōngguó hěn dà.",
+        "vi": "Trung Quốc rất lớn."
+      },
+      {
+        "zh": "你爱你的国家吗？",
+        "pinyin": "nǐ ài nǐ de guójiā ma?",
+        "vi": "Bạn yêu đất nước của bạn không?"
       }
     ]
   },
@@ -66,6 +111,16 @@
         "zh": "他是英国人。",
         "pinyin": "tā shì Yīngguó rén.",
         "vi": "Anh ấy là người Anh."
+      },
+      {
+        "zh": "有两个人。",
+        "pinyin": "yǒu liǎng gè rén.",
+        "vi": "Có hai người."
+      },
+      {
+        "zh": "你好，中国人！",
+        "pinyin": "nǐ hǎo, Zhōngguó rén!",
+        "vi": "Chào người Trung Quốc!"
       }
     ]
   },
@@ -80,6 +135,16 @@
         "zh": "我是中国人。",
         "pinyin": "wǒ shì Zhōngguó rén.",
         "vi": "Tôi là người Trung Quốc."
+      },
+      {
+        "zh": "我喜欢你。",
+        "pinyin": "wǒ xǐhuān nǐ.",
+        "vi": "Tôi thích bạn."
+      },
+      {
+        "zh": "我有一本书。",
+        "pinyin": "wǒ yǒu yī běn shū.",
+        "vi": "Tôi có một cuốn sách."
       }
     ]
   },
@@ -94,6 +159,16 @@
         "zh": "我是美国人，你呢？",
         "pinyin": "wǒ shì Měiguó rén, nǐ ne?",
         "vi": "Tôi là người Mỹ, còn bạn?"
+      },
+      {
+        "zh": "我在北京，你在哪儿呢？",
+        "pinyin": "wǒ zài Běijīng, nǐ zài nǎr ne?",
+        "vi": "Tôi ở Bắc Kinh, bạn ở đâu?"
+      },
+      {
+        "zh": "她呢？",
+        "pinyin": "tā ne?",
+        "vi": "Còn cô ấy thì sao?"
       }
     ]
   },
@@ -108,6 +183,16 @@
         "zh": "他是崔浩。",
         "pinyin": "tā shì Cuī Hào.",
         "vi": "Cậu ấy là Thôi Hạo."
+      },
+      {
+        "zh": "他是老师。",
+        "pinyin": "tā shì lǎoshī.",
+        "vi": "Anh ấy là giáo viên."
+      },
+      {
+        "zh": "他很好。",
+        "pinyin": "tā hěn hǎo.",
+        "vi": "Anh ấy rất tốt."
       }
     ]
   },
@@ -122,6 +207,16 @@
         "zh": "一、二、三。",
         "pinyin": "yī, èr, sān.",
         "vi": "Một, hai, ba."
+      },
+      {
+        "zh": "三个人。",
+        "pinyin": "sān gè rén.",
+        "vi": "Ba người."
+      },
+      {
+        "zh": "三本书。",
+        "pinyin": "sān běn shū.",
+        "vi": "Ba cuốn sách."
       }
     ]
   },
@@ -136,6 +231,16 @@
         "zh": "三、四、五。",
         "pinyin": "sān, sì, wǔ.",
         "vi": "Ba, bốn, năm."
+      },
+      {
+        "zh": "四个苹果。",
+        "pinyin": "sì gè píngguǒ.",
+        "vi": "Bốn quả táo."
+      },
+      {
+        "zh": "四点钟。",
+        "pinyin": "sì diǎn zhōng.",
+        "vi": "4 giờ."
       }
     ]
   },
@@ -150,6 +255,16 @@
         "zh": "一、二、三、四、五、八、十。",
         "pinyin": "yī, èr, sān, sì, wǔ, bā, shí.",
         "vi": "Một, hai, ba, bốn, năm, tám, mười."
+      },
+      {
+        "zh": "十个人。",
+        "pinyin": "shí gè rén.",
+        "vi": "Mười người."
+      },
+      {
+        "zh": "十本书。",
+        "pinyin": "shí běn shū.",
+        "vi": "Mười cuốn sách."
       }
     ]
   },
@@ -164,6 +279,11 @@
         "zh": "崔浩是韩国人。",
         "pinyin": "Cuī Hào shì Hánguó rén.",
         "vi": "Thôi Hạo là người Hàn Quốc."
+      },
+      {
+        "zh": "崔浩，你好！",
+        "pinyin": "Cuī Hào, nǐ hǎo!",
+        "vi": "Chào Thôi Hạo!"
       }
     ]
   },
@@ -178,6 +298,11 @@
         "zh": "马丁是美国人。",
         "pinyin": "Mǎdīng shì Měiguó rén.",
         "vi": "Martin là người Mỹ."
+      },
+      {
+        "zh": "美国很大。",
+        "pinyin": "Měiguó hěn dà.",
+        "vi": "Nước Mỹ rất lớn."
       }
     ]
   },
@@ -192,6 +317,11 @@
         "zh": "他是韩国人。",
         "pinyin": "tā shì Hánguó rén.",
         "vi": "Cậu ấy là người Hàn Quốc."
+      },
+      {
+        "zh": "韩国在哪儿？",
+        "pinyin": "Hánguó zài nǎr?",
+        "vi": "Hàn Quốc ở đâu?"
       }
     ]
   },
@@ -206,6 +336,11 @@
         "zh": "他是日本人。",
         "pinyin": "tā shì Rìběn rén.",
         "vi": "Anh ấy là người Nhật Bản."
+      },
+      {
+        "zh": "日本的文化很有名。",
+        "pinyin": "Rìběn de wénhuà hěn yǒumíng.",
+        "vi": "Văn hóa Nhật Bản rất nổi tiếng."
       }
     ]
   },
@@ -220,6 +355,16 @@
         "zh": "李老师是中国人。",
         "pinyin": "Lǐ lǎoshī shì Zhōngguó rén.",
         "vi": "Thầy Lý là người Trung Quốc."
+      },
+      {
+        "zh": "中国很大。",
+        "pinyin": "Zhōngguó hěn dà.",
+        "vi": "Trung Quốc rất lớn."
+      },
+      {
+        "zh": "我喜欢中国。",
+        "pinyin": "wǒ xǐhuān Zhōngguó.",
+        "vi": "Tôi thích Trung Quốc."
       }
     ]
   },
@@ -234,6 +379,11 @@
         "zh": "林娜是德国人。",
         "pinyin": "Línnà shì Déguó rén.",
         "vi": "Linna là người Đức."
+      },
+      {
+        "zh": "德国在欧洲。",
+        "pinyin": "Déguó zài Ōuzhōu.",
+        "vi": "Đức ở Châu Âu."
       }
     ]
   },
@@ -248,6 +398,11 @@
         "zh": "他是英国人。",
         "pinyin": "tā shì Yīngguó rén.",
         "vi": "Cậu ấy là người Anh."
+      },
+      {
+        "zh": "英国的首都是伦敦。",
+        "pinyin": "Yīngguó de shǒudū shì Lúndūn.",
+        "vi": "Thủ đô của Anh là Luân Đôn."
       }
     ]
   },
@@ -262,6 +417,11 @@
         "zh": "阿明是印度人。",
         "pinyin": "Āmíng shì Yìndù rén.",
         "vi": "A Minh là người Ấn Độ."
+      },
+      {
+        "zh": "印度有很多人。",
+        "pinyin": "Yìndù yǒu hěnduō rén.",
+        "vi": "Ấn Độ có rất nhiều người."
       }
     ]
   },
@@ -276,6 +436,11 @@
         "zh": "他是意大利人。",
         "pinyin": "tā shì Yìdàlì rén.",
         "vi": "Cậu ấy là người Ý."
+      },
+      {
+        "zh": "意大利面很好吃。",
+        "pinyin": "Yìdàlì miàn hěn hǎochī.",
+        "vi": "Mì Ý rất ngon."
       }
     ]
   },
@@ -290,6 +455,11 @@
         "zh": "马丁是法国人。",
         "pinyin": "Mǎdīng shì Fǎguó rén.",
         "vi": "Martin là người Pháp."
+      },
+      {
+        "zh": "法国有埃菲尔铁塔。",
+        "pinyin": "Fǎguó yǒu Āifēi'ěr tiětǎ.",
+        "vi": "Pháp có tháp Eiffel."
       }
     ]
   },
@@ -304,6 +474,11 @@
         "zh": "老师是泰国人。",
         "pinyin": "lǎoshī shì Tàiguó rén.",
         "vi": "Giáo viên là người Thái Lan."
+      },
+      {
+        "zh": "泰国很美。",
+        "pinyin": "Tàiguó hěn měi.",
+        "vi": "Thái Lan rất đẹp."
       }
     ]
   }

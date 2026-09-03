@@ -10,6 +10,16 @@
         "zh": "今天是九月三号。",
         "pinyin": "jīntiān shì jiǔ yuè sān hào.",
         "vi": "Hôm nay là ngày 3 tháng 9."
+      },
+      {
+        "zh": "今天很冷。",
+        "pinyin": "jīntiān hěn lěng.",
+        "vi": "Hôm nay rất lạnh."
+      },
+      {
+        "zh": "今天我们去哪儿？",
+        "pinyin": "jīntiān wǒmen qù nǎr?",
+        "vi": "Hôm nay chúng ta đi đâu?"
       }
     ]
   },
@@ -24,6 +34,16 @@
         "zh": "昨天是星期二。",
         "pinyin": "zuótiān shì xīngqī'èr.",
         "vi": "Hôm qua là thứ ba."
+      },
+      {
+        "zh": "我昨天去超市了。",
+        "pinyin": "wǒ zuótiān qù chāoshì le.",
+        "vi": "Hôm qua tôi đã đi siêu thị."
+      },
+      {
+        "zh": "昨天你做什么了？",
+        "pinyin": "zuótiān nǐ zuò shénme le?",
+        "vi": "Hôm qua bạn đã làm gì?"
       }
     ]
   },
@@ -38,6 +58,16 @@
         "zh": "明天你有工作吗？",
         "pinyin": "míngtiān nǐ yǒu gōngzuò ma?",
         "vi": "Ngày mai bạn có việc làm không?"
+      },
+      {
+        "zh": "明天是几号？",
+        "pinyin": "míngtiān shì jǐ hào?",
+        "vi": "Ngày mai là ngày mấy?"
+      },
+      {
+        "zh": "我们明天一起去公园吧。",
+        "pinyin": "wǒmen míngtiān yìqǐ qù gōngyuán ba.",
+        "vi": "Ngày mai chúng ta cùng đi công viên nhé."
       }
     ]
   },
@@ -52,6 +82,16 @@
         "zh": "今天是十号。",
         "pinyin": "jīntiān shì shí hào.",
         "vi": "Hôm nay là ngày mồng mười."
+      },
+      {
+        "zh": "他的生日是五月五号。",
+        "pinyin": "tā de shēngrì shì wǔ yuè wǔ hào.",
+        "vi": "Sinh nhật của anh ấy là ngày 5 tháng 5."
+      },
+      {
+        "zh": "明天是一号。",
+        "pinyin": "míngtiān shì yī hào.",
+        "vi": "Ngày mai là ngày mồng một."
       }
     ]
   },
@@ -66,6 +106,16 @@
         "zh": "明天是十月一日。",
         "pinyin": "míngtiān shì shí yuè yī rì.",
         "vi": "Ngày mai là ngày mồng 1 tháng 10."
+      },
+      {
+        "zh": "今天是三月八日。",
+        "pinyin": "jīntiān shì sān yuè bā rì.",
+        "vi": "Hôm nay là ngày 8 tháng 3."
+      },
+      {
+        "zh": "他们的结婚日是五月十日。",
+        "pinyin": "tāmen de jiéhūn rì shì wǔ yuè shí rì.",
+        "vi": "Ngày cưới của họ là ngày 10 tháng 5."
       }
     ]
   },
@@ -80,6 +130,16 @@
         "zh": "这个月是八月。",
         "pinyin": "zhè gè yuè shì bā yuè.",
         "vi": "Tháng này là tháng tám."
+      },
+      {
+        "zh": "一月是一年的开始。",
+        "pinyin": "yī yuè shì yī nián de kāishǐ.",
+        "vi": "Tháng một là khởi đầu của một năm."
+      },
+      {
+        "zh": "你的生日在几月？",
+        "pinyin": "nǐ de shēngrì zài jǐ yuè?",
+        "vi": "Sinh nhật của bạn vào tháng mấy?"
       }
     ]
   },
@@ -94,6 +154,16 @@
         "zh": "今天是星期五。",
         "pinyin": "jīntiān shì xīngqīwǔ.",
         "vi": "Hôm nay là thứ sáu."
+      },
+      {
+        "zh": "我星期一很忙。",
+        "pinyin": "wǒ xīngqīyī hěn máng.",
+        "vi": "Tôi rất bận vào thứ hai."
+      },
+      {
+        "zh": "一个星期有七天。",
+        "pinyin": "yī gè xīngqī yǒu qī tiān.",
+        "vi": "Một tuần có bảy ngày."
       }
     ]
   },
@@ -108,6 +178,16 @@
         "zh": "今年是二零二六年。",
         "pinyin": "jīnnián shì èr líng èr liù nián.",
         "vi": "Năm nay là năm 2026."
+      },
+      {
+        "zh": "去年我去了中国。",
+        "pinyin": "qùnián wǒ qù le Zhōngguó.",
+        "vi": "Năm ngoái tôi đã đi Trung Quốc."
+      },
+      {
+        "zh": "明年是二零二七年。",
+        "pinyin": "míngnián shì èr líng èr qī nián.",
+        "vi": "Năm sau là năm 2027."
       }
     ]
   },
@@ -122,6 +202,16 @@
         "zh": "今年是二零二六年。",
         "pinyin": "jīnnián shì èr líng èr liù nián.",
         "vi": "Năm nay là năm 2026."
+      },
+      {
+        "zh": "今年我学习汉语。",
+        "pinyin": "jīnnián wǒ xuéxí Hànyǔ.",
+        "vi": "Năm nay tôi học tiếng Trung."
+      },
+      {
+        "zh": "今年你去哪儿旅行？",
+        "pinyin": "jīnnián nǐ qù nǎr lǚxíng?",
+        "vi": "Năm nay bạn đi du lịch ở đâu?"
       }
     ]
   },
@@ -136,6 +226,16 @@
         "zh": "今天是我生日。",
         "pinyin": "jīntiān shì wǒ shēngrì.",
         "vi": "Hôm nay là sinh nhật tôi."
+      },
+      {
+        "zh": "你的生日是几月几号？",
+        "pinyin": "nǐ de shēngrì shì jǐ yuè jǐ hào?",
+        "vi": "Sinh nhật của bạn là ngày mấy tháng mấy?"
+      },
+      {
+        "zh": "我妈妈明天过生日。",
+        "pinyin": "wǒ māma míngtiān guò shēngrì.",
+        "vi": "Ngày mai mẹ tôi tổ chức sinh nhật."
       }
     ]
   },
@@ -150,6 +250,16 @@
         "zh": "祝你生日快乐！",
         "pinyin": "zhù nǐ shēngrì kuàilè!",
         "vi": "Chúc bạn sinh nhật vui vẻ!"
+      },
+      {
+        "zh": "祝你们新年快乐！",
+        "pinyin": "zhù nǐmen xīnnián kuàilè!",
+        "vi": "Chúc các bạn năm mới vui vẻ!"
+      },
+      {
+        "zh": "祝你好运！",
+        "pinyin": "zhù nǐ hǎoyùn!",
+        "vi": "Chúc bạn may mắn!"
       }
     ]
   },
@@ -164,6 +274,16 @@
         "zh": "祝你们快乐！",
         "pinyin": "zhù nǐmen kuàilè!",
         "vi": "Chúc các bạn vui vẻ!"
+      },
+      {
+        "zh": "今天我很快乐。",
+        "pinyin": "jīntiān wǒ hěn kuàilè.",
+        "vi": "Hôm nay tôi rất vui."
+      },
+      {
+        "zh": "祝你天天快乐！",
+        "pinyin": "zhù nǐ tiāntiān kuàilè!",
+        "vi": "Chúc bạn ngày nào cũng vui!"
       }
     ]
   },
@@ -178,6 +298,16 @@
         "zh": "对，他是老师。",
         "pinyin": "duì, tā shì lǎoshī.",
         "vi": "Đúng vậy, ông ấy là giáo viên."
+      },
+      {
+        "zh": "你说的很对。",
+        "pinyin": "nǐ shuō de hěn duì.",
+        "vi": "Bạn nói rất đúng."
+      },
+      {
+        "zh": "这个答案对不对？",
+        "pinyin": "zhè gè dá'àn duì bù duì?",
+        "vi": "Câu trả lời này có đúng không?"
       }
     ]
   },
@@ -192,6 +322,16 @@
         "zh": "你汉语怎么样？",
         "pinyin": "nǐ Hànyǔ zěnmeyàng?",
         "vi": "Tiếng Trung của bạn thế nào?"
+      },
+      {
+        "zh": "今天天气怎么样？",
+        "pinyin": "jīntiān tiānqì zěnmeyàng?",
+        "vi": "Thời tiết hôm nay thế nào?"
+      },
+      {
+        "zh": "我们一起去，怎么样？",
+        "pinyin": "wǒmen yìqǐ qù, zěnmeyàng?",
+        "vi": "Chúng ta cùng đi, thế nào?"
       }
     ]
   }

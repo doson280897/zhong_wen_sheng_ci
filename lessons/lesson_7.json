@@ -10,6 +10,16 @@
         "zh": "老师在学校。",
         "pinyin": "lǎoshī zài xuéxiào.",
         "vi": "Giáo viên ở trường học."
+      },
+      {
+        "zh": "我在家。",
+        "pinyin": "wǒ zài jiā.",
+        "vi": "Tôi ở nhà."
+      },
+      {
+        "zh": "超市在银行东边。",
+        "pinyin": "chāoshì zài yínháng dōngbian.",
+        "vi": "Siêu thị ở phía đông ngân hàng."
       }
     ]
   },
@@ -24,6 +34,16 @@
         "zh": "你在哪儿工作？",
         "pinyin": "nǐ zài nǎr gōngzuò?",
         "vi": "Bạn làm việc ở đâu?"
+      },
+      {
+        "zh": "邮局在哪儿？",
+        "pinyin": "yóujú zài nǎr?",
+        "vi": "Bưu điện ở đâu?"
+      },
+      {
+        "zh": "你住在哪儿？",
+        "pinyin": "nǐ zhù zài nǎr?",
+        "vi": "Bạn sống ở đâu?"
       }
     ]
   },
@@ -38,6 +58,16 @@
         "zh": "银行在学校旁边。",
         "pinyin": "yínháng zài xuéxiào pángbiān.",
         "vi": "Ngân hàng ở bên cạnh trường học."
+      },
+      {
+        "zh": "我需要去银行。",
+        "pinyin": "wǒ xūyào qù yínháng.",
+        "vi": "Tôi cần đi ngân hàng."
+      },
+      {
+        "zh": "银行对面有超市。",
+        "pinyin": "yínháng duìmiàn yǒu chāoshì.",
+        "vi": "Đối diện ngân hàng có siêu thị."
       }
     ]
   },
@@ -52,6 +82,16 @@
         "zh": "我在中国银行工作。",
         "pinyin": "wǒ zài Zhōngguó Yínháng gōngzuò.",
         "vi": "Tôi làm việc ở Ngân hàng Trung Quốc."
+      },
+      {
+        "zh": "中国银行在哪儿？",
+        "pinyin": "Zhōngguó Yínháng zài nǎr?",
+        "vi": "Ngân hàng Trung Quốc ở đâu?"
+      },
+      {
+        "zh": "中国银行旁边有邮局。",
+        "pinyin": "Zhōngguó Yínháng pángbiān yǒu yóujú.",
+        "vi": "Bên cạnh Ngân hàng Trung Quốc có bưu điện."
       }
     ]
   },
@@ -66,6 +106,16 @@
         "zh": "我不知道邮局在哪儿。",
         "pinyin": "wǒ bù zhīdào yóujú zài nǎr.",
         "vi": "Tôi không biết bưu điện ở đâu."
+      },
+      {
+        "zh": "你知道老师家在哪儿吗？",
+        "pinyin": "nǐ zhīdào lǎoshī jiā zài nǎr ma?",
+        "vi": "Bạn có biết nhà giáo viên ở đâu không?"
+      },
+      {
+        "zh": "她知道中国银行。",
+        "pinyin": "tā zhīdào Zhōngguó Yínháng.",
+        "vi": "Cô ấy biết Ngân hàng Trung Quốc."
       }
     ]
   },
@@ -80,6 +130,16 @@
         "zh": "超市在学校东边。",
         "pinyin": "chāoshì zài xuéxiào dōngbian.",
         "vi": "Siêu thị ở phía đông trường học."
+      },
+      {
+        "zh": "银行在邮局东边。",
+        "pinyin": "yínháng zài yóujú dōngbian.",
+        "vi": "Ngân hàng ở phía đông bưu điện."
+      },
+      {
+        "zh": "东边有车站。",
+        "pinyin": "dōngbian yǒu chēzhàn.",
+        "vi": "Phía đông có trạm xe buýt."
       }
     ]
   },
@@ -94,6 +154,16 @@
         "zh": "邮局在银行西边。",
         "pinyin": "yóujú zài yínháng xībian.",
         "vi": "Bưu điện ở phía tây ngân hàng."
+      },
+      {
+        "zh": "学校在超市西边。",
+        "pinyin": "xuéxiào zài chāoshì xībian.",
+        "vi": "Trường học ở phía tây siêu thị."
+      },
+      {
+        "zh": "西边有公园。",
+        "pinyin": "xībian yǒu gōngyuán.",
+        "vi": "Phía tây có công viên."
       }
     ]
   },
@@ -108,6 +178,16 @@
         "zh": "老师家在学校南边。",
         "pinyin": "lǎoshī jiā zài xuéxiào nánbian.",
         "vi": "Nhà giáo viên ở phía nam trường học."
+      },
+      {
+        "zh": "银行在超市南边。",
+        "pinyin": "yínháng zài chāoshì nánbian.",
+        "vi": "Ngân hàng ở phía nam siêu thị."
+      },
+      {
+        "zh": "南边有医院。",
+        "pinyin": "nánbian yǒu yīyuàn.",
+        "vi": "Phía nam có bệnh viện."
       }
     ]
   },
@@ -122,6 +202,16 @@
         "zh": "超市在银行北边。",
         "pinyin": "chāoshì zài yínháng běibian.",
         "vi": "Siêu thị ở phía bắc ngân hàng."
+      },
+      {
+        "zh": "邮局在学校北边。",
+        "pinyin": "yóujú zài xuéxiào běibian.",
+        "vi": "Bưu điện ở phía bắc trường học."
+      },
+      {
+        "zh": "北边有图书馆。",
+        "pinyin": "běibian yǒu túshūguǎn.",
+        "vi": "Phía bắc có thư viện."
       }
     ]
   },
@@ -136,6 +226,16 @@
         "zh": "银行在学校前边。",
         "pinyin": "yínháng zài xuéxiào qiánbian.",
         "vi": "Ngân hàng ở phía trước trường học."
+      },
+      {
+        "zh": "邮局在超市前边。",
+        "pinyin": "yóujú zài chāoshì qiánbian.",
+        "vi": "Bưu điện ở phía trước siêu thị."
+      },
+      {
+        "zh": "前边有红绿灯。",
+        "pinyin": "qiánbian yǒu hónglǜdēng.",
+        "vi": "Phía trước có đèn giao thông."
       }
     ]
   },
@@ -150,6 +250,16 @@
         "zh": "邮局在学校后边。",
         "pinyin": "yóujú zài xuéxiào hòubian.",
         "vi": "Bưu điện ở phía sau trường học."
+      },
+      {
+        "zh": "学校在银行后边。",
+        "pinyin": "xuéxiào zài yínháng hòubian.",
+        "vi": "Trường học ở phía sau ngân hàng."
+      },
+      {
+        "zh": "后边有停车场。",
+        "pinyin": "hòubian yǒu tíngchēchǎng.",
+        "vi": "Phía sau có bãi đỗ xe."
       }
     ]
   },
@@ -164,6 +274,16 @@
         "zh": "老师家在银行旁边。",
         "pinyin": "lǎoshī jiā zài yínháng pángbiān.",
         "vi": "Nhà giáo viên ở bên cạnh ngân hàng."
+      },
+      {
+        "zh": "邮局在超市旁边。",
+        "pinyin": "yóujú zài chāoshì pángbiān.",
+        "vi": "Bưu điện ở bên cạnh siêu thị."
+      },
+      {
+        "zh": "学校旁边有书店。",
+        "pinyin": "xuéxiào pángbiān yǒu shūdiàn.",
+        "vi": "Bên cạnh trường học có hiệu sách."
       }
     ]
   },
@@ -178,6 +298,16 @@
         "zh": "学校在超市对面。",
         "pinyin": "xuéxiào zài chāoshì duìmiàn.",
         "vi": "Trường học ở đối diện siêu thị."
+      },
+      {
+        "zh": "银行在邮局对面。",
+        "pinyin": "yínháng zài yóujú duìmiàn.",
+        "vi": "Ngân hàng ở đối diện bưu điện."
+      },
+      {
+        "zh": "对面有电影院。",
+        "pinyin": "duìmiàn yǒu diànyǐngyuàn.",
+        "vi": "Đối diện có rạp chiếu phim."
       }
     ]
   },
@@ -192,6 +322,16 @@
         "zh": "邮局在超市旁边。",
         "pinyin": "yóujú zài chāoshì pángbiān.",
         "vi": "Bưu điện ở bên cạnh siêu thị."
+      },
+      {
+        "zh": "我想去邮局寄信。",
+        "pinyin": "wǒ xiǎng qù yóujú jì xìn.",
+        "vi": "Tôi muốn đi bưu điện gửi thư."
+      },
+      {
+        "zh": "邮局在哪儿？",
+        "pinyin": "yóujú zài nǎr?",
+        "vi": "Bưu điện ở đâu?"
       }
     ]
   },
@@ -206,6 +346,16 @@
         "zh": "我们在学校学习。",
         "pinyin": "wǒmen zài xuéxiào xuéxí.",
         "vi": "Chúng tôi học tập ở trường."
+      },
+      {
+        "zh": "学校在银行对面。",
+        "pinyin": "xuéxiào zài yínháng duìmiàn.",
+        "vi": "Trường học ở đối diện ngân hàng."
+      },
+      {
+        "zh": "我的学校很大。",
+        "pinyin": "wǒ de xuéxiào hěn dà.",
+        "vi": "Trường của tôi rất lớn."
       }
     ]
   },
@@ -220,6 +370,16 @@
         "zh": "超市在银行对面。",
         "pinyin": "chāoshì zài yínháng duìmiàn.",
         "vi": "Siêu thị ở đối diện ngân hàng."
+      },
+      {
+        "zh": "我去超市买东西。",
+        "pinyin": "wǒ qù chāoshì mǎi dōngxi.",
+        "vi": "Tôi đi siêu thị mua đồ."
+      },
+      {
+        "zh": "超市很大。",
+        "pinyin": "chāoshì hěn dà.",
+        "vi": "Siêu thị rất lớn."
       }
     ]
   },
@@ -234,6 +394,16 @@
         "zh": "我们一起上课吧。",
         "pinyin": "wǒmen yìqǐ shàng kè ba.",
         "vi": "Chúng mình cùng lên lớp nhé."
+      },
+      {
+        "zh": "你去银行吧。",
+        "pinyin": "nǐ qù yínháng ba.",
+        "vi": "Bạn đi ngân hàng đi."
+      },
+      {
+        "zh": "他应该在家吧。",
+        "pinyin": "tā yīnggāi zài jiā ba.",
+        "vi": "Chắc là anh ấy ở nhà."
       }
     ]
   }

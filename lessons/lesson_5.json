@@ -10,6 +10,16 @@
         "zh": "我家有四口人。",
         "pinyin": "wǒ jiā yǒu sì kǒu rén.",
         "vi": "Nhà tôi có bốn người."
+      },
+      {
+        "zh": "你家在哪儿？",
+        "pinyin": "nǐ jiā zài nǎr?",
+        "vi": "Nhà bạn ở đâu?"
+      },
+      {
+        "zh": "这是我家。",
+        "pinyin": "zhè shì wǒ jiā.",
+        "vi": "Đây là nhà tôi."
       }
     ]
   },
@@ -24,6 +34,16 @@
         "zh": "你家有几口人？",
         "pinyin": "nǐ jiā yǒu jǐ kǒu rén?",
         "vi": "Nhà bạn có mấy người?"
+      },
+      {
+        "zh": "我家有五口人。",
+        "pinyin": "wǒ jiā yǒu wǔ kǒu rén.",
+        "vi": "Nhà tôi có năm người."
+      },
+      {
+        "zh": "你有姐姐吗？",
+        "pinyin": "nǐ yǒu jiějie ma?",
+        "vi": "Bạn có chị gái không?"
       }
     ]
   },
@@ -38,6 +58,16 @@
         "zh": "我家有五口人。",
         "pinyin": "wǒ jiā yǒu wǔ kǒu rén.",
         "vi": "Nhà tôi có năm người."
+      },
+      {
+        "zh": "你家有几口人？",
+        "pinyin": "nǐ jiā yǒu jǐ kǒu rén?",
+        "vi": "Nhà bạn có mấy người?"
+      },
+      {
+        "zh": "他家有三口人。",
+        "pinyin": "tā jiā yǒu sān kǒu rén.",
+        "vi": "Nhà anh ấy có ba người."
       }
     ]
   },
@@ -52,6 +82,16 @@
         "zh": "我爸爸是医生。",
         "pinyin": "wǒ bàba shì yīshēng.",
         "vi": "Bố tôi là bác sĩ."
+      },
+      {
+        "zh": "你爸爸做什么工作？",
+        "pinyin": "nǐ bàba zuò shénme gōngzuò?",
+        "vi": "Bố bạn làm công việc gì?"
+      },
+      {
+        "zh": "我爸爸和妈妈都是老师。",
+        "pinyin": "wǒ bàba hé māma dōu shì lǎoshī.",
+        "vi": "Bố và mẹ tôi đều là giáo viên."
       }
     ]
   },
@@ -66,6 +106,16 @@
         "zh": "我妈妈是老师。",
         "pinyin": "wǒ māma shì lǎoshī.",
         "vi": "Mẹ tôi là giáo viên."
+      },
+      {
+        "zh": "你妈妈是医生吗？",
+        "pinyin": "nǐ māma shì yīshēng ma?",
+        "vi": "Mẹ bạn là bác sĩ à?"
+      },
+      {
+        "zh": "我妈妈也是中国人。",
+        "pinyin": "wǒ māma yě shì Zhōngguó rén.",
+        "vi": "Mẹ tôi cũng là người Trung Quốc."
       }
     ]
   },
@@ -80,6 +130,16 @@
         "zh": "我哥哥是大学生。",
         "pinyin": "wǒ gēge shì dàxuéshēng.",
         "vi": "Anh trai tôi là sinh viên đại học."
+      },
+      {
+        "zh": "我哥哥学习汉语。",
+        "pinyin": "wǒ gēge xuéxí Hànyǔ.",
+        "vi": "Anh trai tôi học tiếng Trung."
+      },
+      {
+        "zh": "你有哥哥吗？",
+        "pinyin": "nǐ yǒu gēge ma?",
+        "vi": "Bạn có anh trai không?"
       }
     ]
   },
@@ -94,6 +154,16 @@
         "zh": "爸爸和妈妈都是医生。",
         "pinyin": "bàba hé māma dōu shì yīshēng.",
         "vi": "Bố và mẹ đều là bác sĩ."
+      },
+      {
+        "zh": "哥哥和姐姐都学习英语。",
+        "pinyin": "gēge hé jiějie dōu xuéxí Yīngyǔ.",
+        "vi": "Anh trai và chị gái đều học tiếng Anh."
+      },
+      {
+        "zh": "我和同学一起上课。",
+        "pinyin": "wǒ hé tóngxué yìqǐ shàng kè.",
+        "vi": "Tôi và bạn học cùng nhau lên lớp."
       }
     ]
   },
@@ -108,6 +178,16 @@
         "zh": "他是职员。",
         "pinyin": "tā shì zhíyuán.",
         "vi": "Anh ấy là nhân viên văn phòng."
+      },
+      {
+        "zh": "我妈妈是银行职员。",
+        "pinyin": "wǒ māma shì yínháng zhíyuán.",
+        "vi": "Mẹ tôi là nhân viên ngân hàng."
+      },
+      {
+        "zh": "她是职员，不是老师。",
+        "pinyin": "tā shì zhíyuán, bù shì lǎoshī.",
+        "vi": "Cô ấy là nhân viên, không phải giáo viên."
       }
     ]
   },
@@ -122,6 +202,16 @@
         "zh": "我们都学习汉语。",
         "pinyin": "wǒmen dōu xuéxí Hànyǔ.",
         "vi": "Chúng tôi đều học tiếng Trung."
+      },
+      {
+        "zh": "我们都是学生。",
+        "pinyin": "wǒmen dōu shì xuésheng.",
+        "vi": "Chúng tôi đều là học sinh."
+      },
+      {
+        "zh": "爸爸和妈妈都是中国人。",
+        "pinyin": "bàba hé māma dōu shì Zhōngguó rén.",
+        "vi": "Bố và mẹ đều là người Trung Quốc."
       }
     ]
   },
@@ -136,6 +226,16 @@
         "zh": "哥哥和姐姐都是大学生。",
         "pinyin": "gēge hé jiějie dōu shì dàxuéshēng.",
         "vi": "Anh trai và chị gái đều là sinh viên đại học."
+      },
+      {
+        "zh": "我哥哥是大学生。",
+        "pinyin": "wǒ gēge shì dàxuéshēng.",
+        "vi": "Anh trai tôi là sinh viên đại học."
+      },
+      {
+        "zh": "你是大学生吗？",
+        "pinyin": "nǐ shì dàxuéshēng ma?",
+        "vi": "Bạn là sinh viên đại học à?"
       }
     ]
   },
@@ -150,6 +250,16 @@
         "zh": "我们都是学生。",
         "pinyin": "wǒmen dōu shì xuésheng.",
         "vi": "Chúng tôi đều là học sinh."
+      },
+      {
+        "zh": "我们班有十个学生。",
+        "pinyin": "wǒmen bān yǒu shí gè xuésheng.",
+        "vi": "Lớp chúng tôi có mười học sinh."
+      },
+      {
+        "zh": "她也是学生吗？",
+        "pinyin": "tā yě shì xuésheng ma?",
+        "vi": "Cô ấy cũng là học sinh à?"
       }
     ]
   },
@@ -164,6 +274,16 @@
         "zh": "你有几个弟弟？",
         "pinyin": "nǐ yǒu jǐ gè dìdi?",
         "vi": "Bạn có mấy người em trai?"
+      },
+      {
+        "zh": "你家有几口人？",
+        "pinyin": "nǐ jiā yǒu jǐ kǒu rén?",
+        "vi": "Nhà bạn có mấy người?"
+      },
+      {
+        "zh": "你们班有几个学生？",
+        "pinyin": "nǐmen bān yǒu jǐ gè xuésheng?",
+        "vi": "Lớp các bạn có mấy học sinh?"
       }
     ]
   },
@@ -178,6 +298,16 @@
         "zh": "你们班有多少个学生？",
         "pinyin": "nǐmen bān yǒu duōshao gè xuésheng?",
         "vi": "Lớp của các bạn có bao nhiêu học sinh?"
+      },
+      {
+        "zh": "你家有多少人？",
+        "pinyin": "nǐ jiā yǒu duōshao rén?",
+        "vi": "Nhà bạn có bao nhiêu người?"
+      },
+      {
+        "zh": "这本书多少钱？",
+        "pinyin": "zhè běn shū duōshao qián?",
+        "vi": "Cuốn sách này bao nhiêu tiền?"
       }
     ]
   },
@@ -192,6 +322,16 @@
         "zh": "你爸爸做什么工作？",
         "pinyin": "nǐ bàba zuò shénme gōngzuò?",
         "vi": "Bố bạn làm công việc gì?"
+      },
+      {
+        "zh": "我妈妈做老师。",
+        "pinyin": "wǒ māma zuò lǎoshī.",
+        "vi": "Mẹ tôi làm giáo viên."
+      },
+      {
+        "zh": "你做什么？",
+        "pinyin": "nǐ zuò shénme?",
+        "vi": "Bạn làm gì?"
       }
     ]
   },
@@ -206,6 +346,16 @@
         "zh": "你做什么工作？",
         "pinyin": "nǐ zuò shénme gōngzuò?",
         "vi": "Bạn làm công việc gì?"
+      },
+      {
+        "zh": "我爸爸的工作是医生。",
+        "pinyin": "wǒ bàba de gōngzuò shì yīshēng.",
+        "vi": "Công việc của bố tôi là bác sĩ."
+      },
+      {
+        "zh": "你在哪儿工作？",
+        "pinyin": "nǐ zài nǎr gōngzuò?",
+        "vi": "Bạn làm việc ở đâu?"
       }
     ]
   },
@@ -220,6 +370,16 @@
         "zh": "他爸爸是律师。",
         "pinyin": "tā bàba shì lǜshī.",
         "vi": "Bố anh ấy là luật sư."
+      },
+      {
+        "zh": "你想当律师吗？",
+        "pinyin": "nǐ xiǎng dāng lǜshī ma?",
+        "vi": "Bạn muốn làm luật sư à?"
+      },
+      {
+        "zh": "我姐姐是律师。",
+        "pinyin": "wǒ jiějie shì lǜshī.",
+        "vi": "Chị gái tôi là luật sư."
       }
     ]
   },
@@ -234,6 +394,16 @@
         "zh": "我妈妈是医生。",
         "pinyin": "wǒ māma shì yīshēng.",
         "vi": "Mẹ tôi là bác sĩ."
+      },
+      {
+        "zh": "他是很好的医生。",
+        "pinyin": "tā shì hěn hǎo de yīshēng.",
+        "vi": "Anh ấy là bác sĩ rất giỏi."
+      },
+      {
+        "zh": "你爸爸是医生吗？",
+        "pinyin": "nǐ bàba shì yīshēng ma?",
+        "vi": "Bố bạn là bác sĩ à?"
       }
     ]
   },
@@ -248,6 +418,16 @@
         "zh": "我们班有十个学生。",
         "pinyin": "wǒmen bān yǒu shí gè xuésheng.",
         "vi": "Lớp chúng tôi có mười học sinh."
+      },
+      {
+        "zh": "你在哪个班？",
+        "pinyin": "nǐ zài nǎ gè bān?",
+        "vi": "Bạn ở lớp nào?"
+      },
+      {
+        "zh": "我是二班的学生。",
+        "pinyin": "wǒ shì èr bān de xuésheng.",
+        "vi": "Tôi là học sinh lớp hai."
       }
     ]
   },
@@ -262,6 +442,16 @@
         "zh": "我有两个姐姐。",
         "pinyin": "wǒ yǒu liǎng gè jiějie.",
         "vi": "Tôi có hai người chị gái."
+      },
+      {
+        "zh": "我家有五个口人。",
+        "pinyin": "wǒ jiā yǒu wǔ gè rén.",
+        "vi": "Nhà tôi có năm người."
+      },
+      {
+        "zh": "这本书很好。",
+        "pinyin": "zhè běn shū hěn hǎo.",
+        "vi": "Cuốn sách này rất hay."
       }
     ]
   },
@@ -276,6 +466,16 @@
         "zh": "我们一起学习。",
         "pinyin": "wǒmen yìqǐ xuéxí.",
         "vi": "Chúng tôi cùng nhau học tập."
+      },
+      {
+        "zh": "我们都是学生。",
+        "pinyin": "wǒmen dōu shì xuésheng.",
+        "vi": "Chúng tôi đều là học sinh."
+      },
+      {
+        "zh": "我们一起去上课。",
+        "pinyin": "wǒmen yìqǐ qù shàng kè.",
+        "vi": "Chúng ta cùng đi học."
       }
     ]
   },
@@ -290,6 +490,16 @@
         "zh": "我有两个妹妹。",
         "pinyin": "wǒ yǒu liǎng gè mèimei.",
         "vi": "Tôi có hai em gái."
+      },
+      {
+        "zh": "我家有两个人。",
+        "pinyin": "wǒ jiā yǒu liǎng gè rén.",
+        "vi": "Nhà tôi có hai người."
+      },
+      {
+        "zh": "两本书。",
+        "pinyin": "liǎng běn shū.",
+        "vi": "Hai cuốn sách."
       }
     ]
   },
@@ -304,6 +514,16 @@
         "zh": "我姐姐是护士。",
         "pinyin": "wǒ jiějie shì hùshi.",
         "vi": "Chị gái tôi là y tá."
+      },
+      {
+        "zh": "你有姐姐吗？",
+        "pinyin": "nǐ yǒu jiějie ma?",
+        "vi": "Bạn có chị gái không?"
+      },
+      {
+        "zh": "姐姐是大学生。",
+        "pinyin": "jiějie shì dàxuéshēng.",
+        "vi": "Chị gái là sinh viên đại học."
       }
     ]
   },
@@ -318,6 +538,16 @@
         "zh": "他有两个妹妹。",
         "pinyin": "tā yǒu liǎng gè mèimei.",
         "vi": "Anh ấy có hai em gái."
+      },
+      {
+        "zh": "我妹妹是学生。",
+        "pinyin": "wǒ mèimei shì xuésheng.",
+        "vi": "Em gái tôi là học sinh."
+      },
+      {
+        "zh": "你妹妹叫什么名字？",
+        "pinyin": "nǐ mèimei jiào shénme míngzi?",
+        "vi": "Em gái bạn tên là gì?"
       }
     ]
   },
@@ -332,6 +562,16 @@
         "zh": "我弟弟是学生。",
         "pinyin": "wǒ dìdi shì xuésheng.",
         "vi": "Em trai tôi là học sinh."
+      },
+      {
+        "zh": "你有弟弟吗？",
+        "pinyin": "nǐ yǒu dìdi ma?",
+        "vi": "Bạn có em trai không?"
+      },
+      {
+        "zh": "我弟弟学习韩语。",
+        "pinyin": "wǒ dìdi xuéxí Hányǔ.",
+        "vi": "Em trai tôi học tiếng Hàn."
       }
     ]
   },
@@ -346,6 +586,16 @@
         "zh": "他爸爸是工人。",
         "pinyin": "tā bàba shì gōngrén.",
         "vi": "Bố anh ấy là công nhân."
+      },
+      {
+        "zh": "很多工人在这里工作。",
+        "pinyin": "hěnduō gōngrén zài zhèlǐ gōngzuò.",
+        "vi": "Nhiều công nhân làm việc ở đây."
+      },
+      {
+        "zh": "他是工人吗？",
+        "pinyin": "tā shì gōngrén ma?",
+        "vi": "Anh ấy là công nhân à?"
       }
     ]
   },
@@ -360,6 +610,16 @@
         "zh": "他爸爸和妈妈都是农民。",
         "pinyin": "tā bàba hé māma dōu shì nóngmín.",
         "vi": "Bố mẹ cậu ấy đều là nông dân."
+      },
+      {
+        "zh": "我爷爷是农民。",
+        "pinyin": "wǒ yéye shì nóngmín.",
+        "vi": "Ông nội tôi là nông dân."
+      },
+      {
+        "zh": "农民工作很辛苦。",
+        "pinyin": "nóngmín gōngzuò hěn xīnkǔ.",
+        "vi": "Công việc của nông dân rất vất vả."
       }
     ]
   },
@@ -374,6 +634,16 @@
         "zh": "我姐姐是护士。",
         "pinyin": "wǒ jiějie shì hùshi.",
         "vi": "Chị gái tôi là y tá."
+      },
+      {
+        "zh": "她在一家医院做护士。",
+        "pinyin": "tā zài yī jiā yīyuàn zuò hùshi.",
+        "vi": "Cô ấy làm y tá ở một bệnh viện."
+      },
+      {
+        "zh": "我想当护士。",
+        "pinyin": "wǒ xiǎng dāng hùshi.",
+        "vi": "Tôi muốn làm y tá."
       }
     ]
   },
@@ -388,6 +658,16 @@
         "zh": "他哥哥是警察。",
         "pinyin": "tā gēge shì jǐngchá.",
         "vi": "Anh trai anh ấy là cảnh sát."
+      },
+      {
+        "zh": "警察在哪儿？",
+        "pinyin": "jǐngchá zài nǎr?",
+        "vi": "Cảnh sát ở đâu?"
+      },
+      {
+        "zh": "我爸爸是警察。",
+        "pinyin": "wǒ bàba shì jǐngchá.",
+        "vi": "Bố tôi là cảnh sát."
       }
     ]
   }
