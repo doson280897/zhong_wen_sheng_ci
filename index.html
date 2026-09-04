@@ -6,572 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Hán Ngữ Pro • Học từ vựng HSK</title>
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.18.2/dist/index.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+SC:wght@100..900&display=swap"
     rel="stylesheet">
-
-  <style>
-    :root {
-      --bg-body: #f6f8fc;
-      --bg-header: rgba(255, 255, 255, 0.85);
-      --border-header: rgba(0, 0, 0, 0.04);
-      --text-primary: #0b1a33;
-      --text-secondary: #5b6e8e;
-      --text-muted: #7a8aa8;
-      --bg-card: #ffffff;
-      --bg-sidebar: #ffffff;
-      --bg-sidebar-item-hover: #f8faff;
-      --bg-sidebar-item-active: #eef4ff;
-      --border-sidebar: #edf2f7;
-      --border-input: #e2e8f0;
-      --bg-tab: #f0f3f9;
-      --bg-tab-active: #ffffff;
-      --accent: #2563eb;
-      --accent-hover: #1d4ed8;
-      --accent-soft: #eef4ff;
-      --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.03);
-      --shadow-fc: 0 20px 60px rgba(0, 0, 0, 0.04);
-      --border-card: #edf2f7;
-      --border-writer: #e9edf4;
-      --bg-example: #f8faff;
-      --bg-meta: #f0f3f9;
-      --bg-writer: #ffffff;
-      --fc-bg: #ffffff;
-      --fc-border: #edf2f7;
-      --fc-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
-      --fc-hint: #9aabbf;
-      --stroke-color: #0b1a33;
-      --outline-color: #e2e8f0;
-      --grid-line: #e2e8f0;
-      --search-bg: #ffffff;
-    }
-
-    :root.dark {
-      --bg-body: #0f172a;
-      --bg-header: rgba(15, 23, 42, 0.9);
-      --border-header: rgba(255, 255, 255, 0.06);
-      --text-primary: #e2e8f0;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
-      --bg-card: #1e293b;
-      --bg-sidebar: #1e293b;
-      --bg-sidebar-item-hover: #2d3a4f;
-      --bg-sidebar-item-active: #2d3a4f;
-      --border-sidebar: #334155;
-      --border-input: #334155;
-      --bg-tab: #1e293b;
-      --bg-tab-active: #2d3a4f;
-      --accent: #60a5fa;
-      --accent-hover: #93bbfc;
-      --accent-soft: #2d3a4f;
-      --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.2);
-      --shadow-fc: 0 20px 60px rgba(0, 0, 0, 0.3);
-      --border-card: #334155;
-      --border-writer: #334155;
-      --bg-example: #1e293b;
-      --bg-meta: #334155;
-      --bg-writer: #1e293b;
-      --fc-bg: #1e293b;
-      --fc-border: #334155;
-      --fc-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-      --fc-hint: #64748b;
-      --stroke-color: #e2e8f0;
-      --outline-color: #475569;
-      --grid-line: #475569;
-      --search-bg: #1e293b;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', 'Noto Sans SC', sans-serif;
-      background: var(--bg-body);
-      color: var(--text-primary);
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      transition: background 0.3s ease, color 0.3s ease;
-      user-select: none;
-    }
-
-    /* HEADER */
-    .app-header {
-      background: var(--bg-header);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border-header);
-      padding: 10px 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 20;
-    }
-
-    .header-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-    }
-
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .brand {
-      font-weight: 700;
-      font-size: 18px;
-      color: var(--text-primary);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .brand-badge {
-      background: var(--accent);
-      color: white;
-      font-size: 10px;
-      padding: 2px 8px;
-      border-radius: 20px;
-    }
-
-    .nav-tabs {
-      display: flex;
-      gap: 4px;
-      background: var(--bg-tab);
-      padding: 3px;
-      border-radius: 30px;
-    }
-
-    .tab-btn {
-      border: none;
-      background: transparent;
-      padding: 6px 14px;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-secondary);
-      border-radius: 20px;
-      cursor: pointer;
-    }
-
-    .tab-btn.active {
-      background: var(--bg-tab-active);
-      color: var(--accent);
-    }
-
-    .theme-toggle {
-      background: var(--bg-tab);
-      border: none;
-      border-radius: 50%;
-      width: 34px;
-      height: 34px;
-      font-size: 16px;
-      cursor: pointer;
-      color: var(--text-primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .header-bottom {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      width: 100%;
-    }
-
-    .search-wrapper {
-      flex: 1;
-    }
-
-    .search-wrapper input {
-      width: 100%;
-      padding: 7px 14px;
-      border: 1px solid var(--border-input);
-      border-radius: 30px;
-      font-size: 13px;
-      background: var(--search-bg);
-      color: var(--text-primary);
-      outline: none;
-    }
-
-    .select-wrapper {
-      flex: 1;
-    }
-
-    .select-wrapper select {
-      width: 100%;
-      appearance: none;
-      background: var(--search-bg);
-      border: 1px solid var(--border-input);
-      border-radius: 30px;
-      padding: 7px 28px 7px 12px;
-      font-size: 13px;
-      color: var(--text-primary);
-      outline: none;
-      cursor: pointer;
-    }
-
-    /* LAYOUT MAIN */
-    .app-body {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
-
-    .view-vocab {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    /* TOP BAR TỪ VỰNG */
-    .vocab-top-bar {
-      display: flex;
-      gap: 10px;
-      padding: 12px 16px;
-      background: var(--bg-sidebar);
-      border-bottom: 1px solid var(--border-sidebar);
-      overflow-x: auto;
-      white-space: nowrap;
-      flex-shrink: 0;
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .vocab-top-bar::-webkit-scrollbar {
-      height: 6px;
-    }
-
-    .vocab-top-bar::-webkit-scrollbar-thumb {
-      background: var(--border-input);
-      border-radius: 10px;
-    }
-
-    .vocab-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background: var(--bg-body);
-      border: 1px solid var(--border-card);
-      border-radius: 16px;
-      cursor: pointer;
-      transition: all 0.2s;
-      flex-shrink: 0;
-    }
-
-    .vocab-chip.active {
-      background: var(--accent-soft);
-      border-color: var(--accent);
-    }
-
-    .vocab-chip .hanzi {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    .vocab-chip.active .hanzi {
-      color: var(--accent);
-    }
-
-    .vocab-chip .pinyin {
-      font-size: 12px;
-      color: var(--text-secondary);
-    }
-
-    /* DETAIL CONTAINER */
-    .main-content {
-      flex: 1;
-      padding: 20px 16px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      touch-action: pan-y;
-    }
-
-    .detail-card {
-      background: var(--bg-card);
-      border-radius: 24px;
-      padding: 24px;
-      max-width: 600px;
-      width: 100%;
-      box-shadow: var(--shadow-card);
-      border: 1px solid var(--border-card);
-      text-align: center;
-      cursor: grab;
-      transition: transform 0.15s ease-out;
-    }
-
-    .detail-card:active {
-      cursor: grabbing;
-    }
-
-    .swipe-hint {
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-bottom: 16px;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
-
-    .stroke-container,
-    .fc-stroke-container {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
-    }
-
-    .writer-box {
-      position: relative;
-      border-radius: 12px;
-      background: var(--bg-writer);
-      border: 2px solid var(--border-writer);
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-
-    .writer-box .grid {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .writer-box .grid line {
-      stroke: var(--grid-line);
-    }
-
-    .writer-box .target {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-    }
-
-    .word-header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 4px;
-    }
-
-    .pinyin-large {
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--accent);
-    }
-
-    .audio-btn-lg {
-      background: var(--accent-soft);
-      border: none;
-      color: var(--accent);
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .type-badge {
-      font-weight: 500;
-      color: var(--text-muted);
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
-
-    .meaning-large {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 6px;
-    }
-
-    .meta-tag {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text-secondary);
-      background: var(--bg-meta);
-      padding: 4px 12px;
-      border-radius: 20px;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .examples-box {
-      text-align: left;
-      background: var(--bg-example);
-      border-radius: 16px;
-      padding: 16px;
-      border: 1px solid var(--border-card);
-    }
-
-    .examples-title {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    .example-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding-bottom: 10px;
-      margin-bottom: 10px;
-      border-bottom: 1px dashed var(--border-card);
-    }
-
-    .example-item:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .example-item .audio-btn {
-      background: transparent;
-      border: none;
-      color: var(--accent);
-      cursor: pointer;
-      font-size: 15px;
-    }
-
-    .ex-zh {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    .ex-py {
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--accent);
-    }
-
-    .ex-vi {
-      font-size: 13px;
-      color: var(--text-secondary);
-    }
-
-    /* FLASHCARD STYLES */
-    .view-flashcard {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      padding: 20px;
-    }
-
-    .fc-card {
-      width: 100%;
-      max-width: 440px;
-      min-height: 380px;
-      background: var(--fc-bg);
-      border-radius: 28px;
-      box-shadow: var(--fc-shadow);
-      border: 1px solid var(--fc-border);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 20px 24px;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    .fc-hint {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--fc-hint);
-      text-transform: uppercase;
-      margin-bottom: 16px;
-      display: block;
-      width: 100%;
-    }
-
-    .fc-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      width: 100%;
-    }
-
-    .fc-pinyin {
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--accent);
-      margin-top: 8px;
-    }
-
-    .fc-meaning {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-top: 10px;
-    }
-
-    .fc-controls {
-      display: flex;
-      gap: 12px;
-      margin-top: 20px;
-      align-items: center;
-    }
-
-    .fc-btn {
-      padding: 8px 18px;
-      background: var(--bg-card);
-      border: 1px solid var(--border-input);
-      border-radius: 30px;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text-primary);
-      cursor: pointer;
-    }
-
-    .fc-btn-primary {
-      background: var(--accent);
-      color: white;
-      border: none;
-    }
-
-    @media (max-width: 768px) {
-      .detail-card {
-        padding: 16px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -588,7 +29,10 @@
           <button class="tab-btn" id="tab-flashcard" onclick="switchView('flashcard')">🎴 Ôn tập</button>
         </nav>
       </div>
-      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">🌓</button>
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">🌓</button>
+        <button class="theme-toggle" id="settingsBtn" onclick="toggleSettingsModal()">⚙️</button>
+      </div>
     </div>
 
     <div class="header-bottom">
@@ -601,12 +45,24 @@
         </select>
       </div>
     </div>
+
+    <!-- Sub-tabs placed in header for static positioning! -->
+    <div class="fc-modes" id="fcModesContainer" style="display: none; margin: 12px auto 0 auto;">
+      <button class="fc-mode-btn active" id="btn-mode-fc" onclick="switchFlashcardMode('flashcard')">🎴 Thẻ lật</button>
+      <button class="fc-mode-btn" id="btn-mode-quiz" onclick="switchFlashcardMode('quiz')">📝 Chọn Pinyin</button>
+      <button class="fc-mode-btn" id="btn-mode-write" onclick="switchFlashcardMode('write')">✍️ Ôn viết chữ</button>
+    </div>
   </header>
 
-  <div class="app-body">
+  <main class="app-body">
 
     <!-- VIEW VOCAB -->
     <div class="view-vocab" id="view-vocab">
+      <div class="admin-bar">
+        <button class="admin-btn" id="adminAddWordBtn" onclick="openAddWordModal()">➕ Thêm từ</button>
+        <button class="admin-btn" id="adminAddLessonBtn" onclick="openAddLessonModal()">📚 Thêm bài học mới</button>
+        <button class="admin-btn" id="adminExportBtn" onclick="exportCurrentLesson()">📥 Xuất file JSON</button>
+      </div>
       <div class="vocab-top-bar" id="topVocabBar"></div>
 
       <div class="main-content" id="mainContent">
@@ -623,6 +79,47 @@
         <div class="fc-content" id="fcContent"></div>
       </div>
 
+      <!-- Quiz Panel -->
+      <div class="quiz-panel" id="quizPanel" style="display: none;">
+        <div class="quiz-question-card">
+          <div class="quiz-stroke-container" id="quizStrokeContainer"></div>
+          <div class="quiz-question-text" id="quizQuestionText">Chọn phiên âm Pinyin đúng:</div>
+        </div>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+      </div>
+
+      <!-- Write Panel -->
+      <div class="write-panel" id="writePanel" style="display: none;">
+        <div class="write-question-card">
+          <div class="write-hint-info">
+            <span class="write-pinyin" id="writePinyin">pīnyīn</span>
+            <span class="write-meaning" id="writeMeaning">Nghĩa tiếng Việt</span>
+          </div>
+
+          <div class="write-submodes" style="display: flex; background: var(--bg-sidebar); padding: 3px; border-radius: 10px; gap: 4px; margin-top: 8px; margin-bottom: 8px; border: 1px solid var(--border-card);">
+            <button class="fc-mode-btn active" id="btn-write-guided" onclick="setWriteSubMode('guided')" style="font-size: 11px; padding: 4px 12px; border: none; background: transparent; font-weight: 700; border-radius: 8px;">🎯 Theo nét</button>
+            <button class="fc-mode-btn" id="btn-write-free" onclick="setWriteSubMode('free')" style="font-size: 11px; padding: 4px 12px; border: none; background: transparent; font-weight: 700; border-radius: 8px;">✏️ Tự do</button>
+          </div>
+
+          <div class="write-canvas-container" id="writeCanvasContainer" style="position: relative; width: 200px; height: 200px; margin-top: 4px;"></div>
+          <div class="write-character-progress" id="writeProgressText" style="font-size: 13px; font-weight: 700; color: var(--text-secondary); margin-top: 10px;"></div>
+        </div>
+        <div class="write-feedback" id="writeFeedback"></div>
+
+        <!-- Guided Controls -->
+        <div class="write-controls" id="guidedControls" style="margin-top: 12px; display: flex; gap: 8px;">
+          <button class="fc-btn" id="btnWriteReset" onclick="resetWriteQuiz()">🔄 Viết lại</button>
+          <button class="fc-btn" id="btnWriteHint" onclick="showWriteHint()">💡 Gợi ý</button>
+        </div>
+
+        <!-- Free Write Controls -->
+        <div class="write-controls" id="freeControls" style="margin-top: 12px; display: none; gap: 8px;">
+          <button class="fc-btn" id="btnFreeClear" onclick="clearFreeWriteCanvas()">🧹 Xóa</button>
+          <button class="fc-btn fc-btn-primary" id="btnFreeCheck" onclick="checkFreeWriteCanvas()">👁️ Kiểm tra</button>
+        </div>
+      </div>
+
       <div class="fc-controls">
         <button class="fc-btn" onclick="prevFlashcard()">←</button>
         <span class="fc-progress" id="fcProgress">0 / 0</span>
@@ -631,410 +128,128 @@
       </div>
     </div>
 
+  </main>
+
+  <!-- Sync Proposal Toast -->
+  <div id="syncProposal" class="sync-proposal">
+    <div class="proposal-content">
+      <div class="proposal-icon">⚡</div>
+      <div class="proposal-text">
+        <h4>Đồng bộ dữ liệu học</h4>
+        <p id="proposalMessage">Phát hiện có từ vựng chưa tải đầy đủ. Bạn muốn đồng bộ toàn bộ ngay bây giờ không?</p>
+      </div>
+    </div>
+    <div class="proposal-actions">
+      <button class="fc-btn fc-btn-primary" onclick="acceptSyncProposal()">Tải ngay</button>
+      <button class="fc-btn" style="border-color: var(--border-input); background: transparent;" onclick="declineSyncProposal()">Để sau</button>
+    </div>
   </div>
 
-  <script>
-    let currentVocabList = [];
-    let originalVocabList = [];
-    let activeIndex = -1;
-    let currentView = 'vocab';
-
-    let fcList = [];
-    let fcIndex = 0;
-    let isFlipped = false;
-
-    function speakZh(text, e) {
-      if (e) e.stopPropagation();
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(text);
-        u.lang = 'zh-CN';
-        u.rate = 0.6;
-        u.volume = 1;
-        window.speechSynthesis.speak(u);
-      }
-    }
-
-    async function fetchLessonData(num) {
-      try {
-        const r = await fetch(`lessons/lesson_${num}.json`);
-        if (!r.ok) return null;
-        return await r.json();
-      } catch {
-        return null;
-      }
-    }
-
-    async function discoverLessons() {
-      const select = document.getElementById('lessonSelect');
-      while (select.options.length > 1) select.remove(1);
-
-      let n = 1;
-      while (true) {
-        const data = await fetchLessonData(n);
-        if (!data) break;
-        const opt = document.createElement('option');
-        opt.value = n;
-        opt.textContent = `Bài ${n}`;
-        select.appendChild(opt);
-        n++;
-      }
-      select.value = 'all';
-      await loadAndRenderData();
-    }
-
-    async function loadAndRenderData() {
-      const selected = document.getElementById('lessonSelect').value;
-      let newList = [];
-
-      if (selected === 'all') {
-        const promises = [];
-        const options = Array.from(document.getElementById('lessonSelect').options).slice(1);
-        for (const opt of options) {
-          const num = parseInt(opt.value);
-          if (!isNaN(num)) promises.push(fetchLessonData(num));
-        }
-        const results = await Promise.all(promises);
-        newList = results.filter(d => d !== null).flat();
-      } else {
-        const data = await fetchLessonData(parseInt(selected));
-        if (Array.isArray(data)) newList = data;
-        else if (data) newList = [data];
-      }
-
-      currentVocabList = newList;
-      originalVocabList = [...newList];
-
-      document.getElementById('searchInput').value = '';
-      activeIndex = -1;
-
-      renderTopBar();
-      initFlashcards();
-
-      if (currentVocabList.length > 0) {
-        selectWord(0);
-      } else {
-        document.getElementById('detailCard').innerHTML =
-          '<div style="color: var(--text-muted); font-weight: 500;">Không có dữ liệu bài học này</div>';
-      }
-    }
-
-    function switchView(view) {
-      currentView = view;
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById(`tab-${view}`).classList.add('active');
-
-      if (view === 'vocab') {
-        document.getElementById('view-vocab').style.display = 'flex';
-        document.getElementById('view-flashcard').style.display = 'none';
-      } else {
-        document.getElementById('view-vocab').style.display = 'none';
-        document.getElementById('view-flashcard').style.display = 'flex';
-        renderFlashcard();
-      }
-    }
-
-    function renderTopBar() {
-      const topBar = document.getElementById('topVocabBar');
-      topBar.innerHTML = currentVocabList.map((item, i) => `
-        <div class="vocab-chip ${i === activeIndex ? 'active' : ''}" id="chip-${i}" onclick="selectWord(${i})">
-          <span class="hanzi">${item.hanzi}</span>
-          <span class="pinyin">${item.pinyin}</span>
+  <!-- Settings Modal -->
+  <div id="settingsModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="settingsTitleText">⚙️ Cấu hình ứng dụng</h3>
+        <span class="close-btn" onclick="toggleSettingsModal()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="setting-item">
+          <label id="settingsLanguageLabel">🌐 Ngôn ngữ ứng dụng:</label>
+          <select id="langSelect" onchange="saveSettings(); applyLanguage()">
+            <option value="vi">Tiếng Việt</option>
+            <option value="en">English</option>
+          </select>
         </div>
-      `).join('');
-    }
-
-    function selectWord(index) {
-      if (index < 0 || index >= currentVocabList.length) return;
-      activeIndex = index;
-      renderTopBar();
-
-      const activeChip = document.getElementById(`chip-${index}`);
-      if (activeChip) {
-        activeChip.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-      }
-
-      const item = currentVocabList[index];
-      const card = document.getElementById('detailCard');
-
-      // Xử lý danh sách ví dụ đúng cách
-      const examplesHtml = (item.examples && item.examples.length > 0)
-        ? item.examples.map(ex => `
-        <div class="example-item">
-          <button class="audio-btn" onclick="speakZh('${ex.zh}', event)">🔊</button>
-          <div class="ex-content">
-            <div class="ex-zh">${ex.zh}</div>
-            <div class="ex-py">${ex.pinyin}</div>
-            <div class="ex-vi">${ex.vi}</div>
-          </div>
+        <div class="setting-item">
+          <label id="settingsVoiceLabel">🔊 Giọng đọc tiếng Trung:</label>
+          <select id="voiceSelect" onchange="saveSettings(); speakZh('杜玉成山')"></select>
         </div>
-      `).join('')
-        : '<div style="color: var(--text-muted);">Chưa có ví dụ</div>';
-
-      card.innerHTML = `
-    <div class="swipe-hint">👈 Vuốt / Kéo chuột hoặc dùng phím ◄ ► để chuyển từ 👉</div>
-    <div class="stroke-container" id="strokeContainer"></div>
-    <div class="word-header">
-      <span class="pinyin-large">${item.pinyin}</span>
-      <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}')">🔊</button>
+        <div class="setting-item">
+          <label id="settingsSpeedLabel">⚡ Tốc độ đọc: <span id="speedVal">0.6</span>x</label>
+          <input type="range" id="speechSpeed" min="0.2" max="2.0" step="0.1" value="0.6" oninput="updateSpeedLabel(); saveSettings()" onchange="speakZh('杜玉成山')">
+        </div>
+        <div class="setting-item">
+          <label id="settingsStrokeLabel">✏️ Tốc độ viết nét: <span id="strokeSpeedVal">1.4</span>x</label>
+          <input type="range" id="strokeSpeed" min="0.5" max="3.0" step="0.1" value="1.4" oninput="updateStrokeSpeedLabel(); saveSettings()">
+        </div>
+        <div class="setting-item" style="margin-top: 10px;">
+          <button class="fc-btn" id="settingsClearCacheBtn" style="width: 100%; border-color: #ef4444; color: #ef4444; background: transparent; padding: 10px;" onclick="clearVocabCache()">🧹 Xóa bộ nhớ đệm (Clear Cache)</button>
+          <span id="cacheSizeText" style="font-size: 11px; color: var(--text-secondary); text-align: center; margin-top: 6px;">Dung lượng đệm đang dùng: 0 KB</span>
+        </div>
+      </div>
     </div>
-    <div class="type-badge">${item.type || ''}</div>
-    <div class="meaning-large">${item.meaning}</div>
-    <div class="meta-tag">Bài ${item.lesson}</div>
+  </div>
 
-    <div class="examples-box">
-      <div class="examples-title">📌 Ví dụ</div>
-      ${examplesHtml}
+  <!-- Add Word Modal -->
+  <div id="addWordModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalAddWordTitle">➕ Thêm từ vựng mới</h3>
+        <span class="close-btn" onclick="closeAddWordModal()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="setting-item">
+          <label id="modalHanziLabel">Chữ Hán (Hanzi):</label>
+          <input type="text" id="addWordInput" placeholder="Ví dụ: 谢谢" class="modal-input" style="width: 100%; padding: 10px; border-radius: 12px; border: 1px solid var(--border-input); background: var(--search-bg); color: var(--text-primary); outline: none;">
+        </div>
+        <button class="fc-btn fc-btn-primary" id="btnAddWord" style="margin-top: 10px; width: 100%; padding: 10px;" onclick="addWordSubmit()">Thêm vào bài</button>
+      </div>
     </div>
-  `;
+  </div>
 
-      renderHanziWriter('strokeContainer', item.hanzi, window.innerWidth <= 480 ? 110 : 140);
-    }
+  <!-- Edit Word Modal -->
+  <div id="editWordModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalEditWordTitle">✏️ Sửa từ vựng</h3>
+        <span class="close-btn" onclick="closeEditWordModal()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="setting-item">
+          <label id="modalNewHanziLabel">Chữ Hán mới (Hanzi):</label>
+          <input type="text" id="editWordInput" placeholder="Ví dụ: 再见" class="modal-input" style="width: 100%; padding: 10px; border-radius: 12px; border: 1px solid var(--border-input); background: var(--search-bg); color: var(--text-primary); outline: none;">
+        </div>
+        <button class="fc-btn fc-btn-primary" id="btnUpdateWord" style="margin-top: 10px; width: 100%; padding: 10px;" onclick="editWordSubmit()">Cập nhật từ</button>
+      </div>
+    </div>
+  </div>
 
-    function nextWord() {
-      if (activeIndex < currentVocabList.length - 1) {
-        selectWord(activeIndex + 1);
-      }
-    }
+  <!-- Add Lesson Modal -->
+  <div id="addLessonModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalAddLessonTitle">📚 Thêm bài học mới</h3>
+        <span class="close-btn" onclick="closeAddLessonModal()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="setting-item">
+          <label id="modalLessonNumberLabel">Số thứ tự bài (Ví dụ: 9):</label>
+          <input type="number" id="addLessonNumber" placeholder="Số bài" class="modal-input" style="width: 100%; padding: 10px; border-radius: 12px; border: 1px solid var(--border-input); background: var(--search-bg); color: var(--text-primary); outline: none;">
+        </div>
+        <div class="setting-item">
+          <label id="modalLessonTitleLabel">Tiêu đề chữ Hán (Ví dụ: 谢谢):</label>
+          <input type="text" id="addLessonTitle" placeholder="Tiêu đề tiếng Trung" class="modal-input" style="width: 100%; padding: 10px; border-radius: 12px; border: 1px solid var(--border-input); background: var(--search-bg); color: var(--text-primary); outline: none;">
+        </div>
+        <div class="setting-item">
+          <label id="modalLessonTranslationLabel">Nghĩa tiếng Việt (Ví dụ: Cảm ơn):</label>
+          <input type="text" id="addLessonTranslation" placeholder="Ý nghĩa tiếng Việt" class="modal-input" style="width: 100%; padding: 10px; border-radius: 12px; border: 1px solid var(--border-input); background: var(--search-bg); color: var(--text-primary); outline: none;">
+        </div>
+        <div class="setting-item">
+          <label id="modalLessonWordsLabel">Danh sách từ mới (cách nhau bằng dấu phẩy, ví dụ: 谢谢,再见):</label>
+          <textarea id="addLessonWords" placeholder="Nhập từ vựng: từ1, từ2, từ3..." class="modal-input" style="width: 100%; height: 80px; padding: 10px; border-radius: 12px; border: 1px solid var(--border-input); background: var(--search-bg); color: var(--text-primary); outline: none; resize: none; font-family: inherit; font-size: 13px;"></textarea>
+        </div>
+        <button class="fc-btn fc-btn-primary" id="btnCreateLesson" style="margin-top: 10px; width: 100%; padding: 10px;" onclick="addLessonSubmit()">Tạo bài học</button>
+      </div>
+    </div>
+  </div>
 
-    function prevWord() {
-      if (activeIndex > 0) {
-        selectWord(activeIndex - 1);
-      }
-    }
+  <!-- Sync Indicator Floating Badge -->
+  <div id="syncIndicator" class="sync-indicator">
+    <span class="sync-icon">🔄</span>
+    <span id="syncStatus">0 / 0</span>
+  </div>
 
-    /* GESTURES (SWIPE / DRAG) */
-    let startX = 0;
-    let startY = 0;
-    let isDragging = false;
-
-    const detailCard = document.getElementById('detailCard');
-
-    detailCard.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-    }, { passive: true });
-
-    detailCard.addEventListener('touchend', (e) => {
-      const endX = e.changedTouches[0].clientX;
-      const endY = e.changedTouches[0].clientY;
-      handleSwipe(startX, startY, endX, endY);
-    }, { passive: true });
-
-    detailCard.addEventListener('mousedown', (e) => {
-      startX = e.clientX;
-      startY = e.clientY;
-      isDragging = true;
-    });
-
-    document.addEventListener('mouseup', (e) => {
-      if (!isDragging) return;
-      isDragging = false;
-      handleSwipe(startX, startY, e.clientX, e.clientY);
-    });
-
-    function handleSwipe(sX, sY, eX, eY) {
-      const diffX = eX - sX;
-      const diffY = eY - sY;
-
-      if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
-        if (currentView === 'vocab') {
-          if (diffX < 0) nextWord();
-          else prevWord();
-        } else if (currentView === 'flashcard') {
-          if (diffX < 0) nextFlashcard();
-          else prevFlashcard();
-        }
-      }
-    }
-
-    /* KEYBOARD CONTROL */
-    document.addEventListener('keydown', (e) => {
-      if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'SELECT') return;
-
-      if (e.key === 'ArrowRight') {
-        if (currentView === 'vocab') nextWord();
-        else nextFlashcard();
-      } else if (e.key === 'ArrowLeft') {
-        if (currentView === 'vocab') prevWord();
-        else prevFlashcard();
-      } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
-        if (currentView === 'vocab' && activeIndex !== -1) {
-          speakZh(currentVocabList[activeIndex].hanzi);
-        }
-      } else if (e.key === ' ' && currentView === 'flashcard') {
-        e.preventDefault();
-        flipFlashcard();
-      }
-    });
-
-    function filterVocabulary() {
-      const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
-
-      if (!keyword) {
-        currentVocabList = [...originalVocabList];
-      } else {
-        currentVocabList = originalVocabList.filter(item =>
-          item.hanzi.toLowerCase().includes(keyword) ||
-          item.pinyin.toLowerCase().includes(keyword) ||
-          item.meaning.toLowerCase().includes(keyword) ||
-          (item.type || '').toLowerCase().includes(keyword)
-        );
-      }
-
-      activeIndex = -1;
-      renderTopBar();
-      initFlashcards();
-
-      if (currentVocabList.length > 0) {
-        selectWord(0);
-      } else {
-        document.getElementById('detailCard').innerHTML =
-          '<div style="color: var(--text-muted); font-weight: 500;">Không tìm thấy từ phù hợp</div>';
-      }
-    }
-
-    function initFlashcards() {
-      fcList = [...currentVocabList];
-      fcIndex = 0;
-      isFlipped = false;
-      renderFlashcard();
-    }
-
-    function shuffleFlashcards() {
-      fcList.sort(() => Math.random() - 0.5);
-      fcIndex = 0;
-      isFlipped = false;
-      renderFlashcard();
-    }
-
-    function flipFlashcard() {
-      if (!fcList.length) return;
-      isFlipped = !isFlipped;
-      renderFlashcard();
-    }
-
-    function nextFlashcard() {
-      if (fcIndex < fcList.length - 1) {
-        fcIndex++;
-        isFlipped = false;
-        renderFlashcard();
-      }
-    }
-
-    function prevFlashcard() {
-      if (fcIndex > 0) {
-        fcIndex--;
-        isFlipped = false;
-        renderFlashcard();
-      }
-    }
-
-    function renderFlashcard() {
-      const container = document.getElementById('fcContent');
-      const progress = document.getElementById('fcProgress');
-
-      if (!fcList.length) {
-        container.innerHTML = '<div style="color: var(--text-muted);">Không có từ vựng</div>';
-        progress.innerText = '0 / 0';
-        return;
-      }
-
-      const item = fcList[fcIndex];
-      progress.innerText = `${fcIndex + 1} / ${fcList.length}`;
-
-      if (!isFlipped) {
-        container.innerHTML = `
-          <div class="fc-stroke-container" id="fcStrokeContainer"></div>
-          <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}', event)" style="margin-top:8px;">🔊</button>
-          <div class="fc-pinyin">${item.pinyin}</div>
-        `;
-        renderHanziWriter('fcStrokeContainer', item.hanzi, 110);
-      } else {
-        container.innerHTML = `
-          <div class="fc-pinyin" style="font-size:20px;">${item.pinyin}</div>
-          <div class="fc-type">${item.type || ''}</div>
-          <div class="fc-meaning">${item.meaning}</div>
-          <div class="fc-lesson">Bài ${item.lesson}</div>
-          <button class="audio-btn-lg" onclick="speakZh('${item.hanzi}', event)" style="margin-top:12px;">🔊</button>
-        `;
-      }
-    }
-
-    function renderHanziWriter(containerId, text, boxSize) {
-      const container = document.getElementById(containerId);
-      if (!container) return;
-      container.innerHTML = '';
-
-      text.split('').forEach((char, idx) => {
-        if (/[\u4e00-\u9fa5]/.test(char)) {
-          const wrapper = document.createElement('div');
-          wrapper.className = 'writer-box';
-          wrapper.style.width = boxSize + 'px';
-          wrapper.style.height = boxSize + 'px';
-
-          wrapper.innerHTML = `
-            <svg class="grid" viewBox="0 0 100 100">
-              <line x1="0" y1="50" x2="100" y2="50" stroke="var(--grid-line)" stroke-dasharray="2,2" stroke-width="0.8"/>
-              <line x1="50" y1="0" x2="50" y2="100" stroke="var(--grid-line)" stroke-dasharray="2,2" stroke-width="0.8"/>
-              <line x1="0" y1="0" x2="100" y2="100" stroke="var(--grid-line)" stroke-dasharray="2,2" stroke-width="0.8"/>
-              <line x1="100" y1="0" x2="0" y2="100" stroke="var(--grid-line)" stroke-dasharray="2,2" stroke-width="0.8"/>
-            </svg>
-            <div id="${containerId}-target-${idx}" class="target"></div>
-          `;
-          container.appendChild(wrapper);
-
-          const writer = HanziWriter.create(`${containerId}-target-${idx}`, char, {
-            width: boxSize,
-            height: boxSize,
-            padding: 6,
-            showOutline: true,
-            strokeColor: getComputedStyle(document.documentElement).getPropertyValue('--stroke-color').trim() || '#0b1a33',
-            outlineColor: getComputedStyle(document.documentElement).getPropertyValue('--outline-color').trim() || '#e2e8f0',
-            strokeAnimationSpeed: 1.4,
-            delayBetweenStrokes: 25
-          });
-          writer.animateCharacter();
-
-          wrapper.onclick = (e) => {
-            e.stopPropagation();
-            writer.animateCharacter();
-            speakZh(char);
-          };
-        }
-      });
-    }
-
-    function applyTheme(isDark) {
-      const root = document.documentElement;
-      if (isDark) root.classList.add('dark');
-      else root.classList.remove('dark');
-
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      const btn = document.getElementById('themeToggle');
-      if (btn) btn.textContent = isDark ? '☀️' : '🌓';
-
-      if (activeIndex !== -1 && currentVocabList[activeIndex]) {
-        renderHanziWriter('strokeContainer', currentVocabList[activeIndex].hanzi, window.innerWidth <= 480 ? 110 : 140);
-      }
-      if (currentView === 'flashcard') renderFlashcard();
-    }
-
-    function toggleTheme() {
-      applyTheme(!document.documentElement.classList.contains('dark'));
-    }
-
-    function setThemeFromSystem() {
-      const stored = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      applyTheme(stored ? stored === 'dark' : prefersDark);
-    }
-
-    window.addEventListener('DOMContentLoaded', () => {
-      setThemeFromSystem();
-      discoverLessons();
-    });
-  </script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
